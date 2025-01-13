@@ -1,1 +1,1 @@
-# ethberry-portal
+# EthBerry Portal

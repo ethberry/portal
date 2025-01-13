@@ -1,0 +1,537 @@
+{
+  "components": {
+    "footer": {
+      "company": {
+        "title": "Company"
+      },
+      "resources": {
+        "title": "Resources"
+      }
+    },
+    "header": {
+      "language": {
+        "switch": "Switch Language"
+      },
+      "menu": {
+        "articles": "Articles",
+        "company": "Company",
+        "contacts": "Contacts",
+        "dashboard": "Dashboard",
+        "docs": "Docs",
+        "events": "Events",
+        "home": "Home",
+        "login": "Login",
+        "logout": "Logout",
+        "media": "Media",
+        "ourTeam": "Our team",
+        "partnership": "Partnership",
+        "pressKit": "Press Kit",
+        "pricing": "Pricing",
+        "profile": "Profile",
+        "technicalStack": "Technical stack"
+      },
+      "theme": {
+        "switch": "Switch Theme"
+      },
+      "wallet": {
+        "connect": "Connect wallet",
+        "menu": "Account"
+      }
+    },
+    "productTypes": {
+      "enterprise": {
+        "linkTitle": "Contact Us",
+        "text": "For ambitious projects, our Enterprise solution delivers a dedicated team of industry experts, end-to-end project management, and innovative solutions to meet complex demands, ensuring your success at every stage.",
+        "title": "Elite Tier"
+      },
+      "saas": {
+        "linkTitle": "See details",
+        "text": "Ideal for startups looking to break into the market without heavy upfront costs. Leverage our team's expertise to quickly and efficiently bring your vision to life, minimizing risks while maximizing impact.",
+        "title": "Standard Tier"
+      },
+      "selfHosted": {
+        "linkTitle": "See details",
+        "text": "Perfect for growing companies, this tier provides customized development, tailored project management, and the flexibility to adapt to your unique needs, ensuring your product stands out in a competitive landscape.",
+        "title": "Premium Tier"
+      }
+    }
+  },
+  "dialogs": {
+    "add": "Add",
+    "confirmation": "Please confirm",
+    "delete": "Delete `{title}`?",
+    "edit": "Edit"
+  },
+  "enums": {
+    "gender": {
+      "FEMALE": "Female",
+      "MALE": "Male"
+    },
+    "language": {
+      "EN": "\uD83C\uDDFA\uD83C\uDDF8 English",
+      "RU": "\uD83C\uDDF7\uD83C\uDDFA Русский",
+      "UA": "\uD83C\uDDFA\uD83C\uDDE6 Українська"
+    },
+    "newsletterSubscriptionType": {
+      "MARKETING_NEWSLETTER": "Marketing newsletter"
+    },
+    "projectBlockchain": {
+      "ARBITRUM": "ARBITRUM",
+      "AVALANCHE": "AVALANCHE",
+      "BINANCE": "BINANCE",
+      "ETHEREUM": "ETHEREUM",
+      "IMMUTABLE": "IMMUTABLE",
+      "OASYS": "OASYS",
+      "OPTIMISM": "OPTIMISM",
+      "OTHER": "OTHER",
+      "POLYGON": "POLYGON"
+    },
+    "projectBudget": {
+      "10-25": "10-25",
+      "100-250": "100-250",
+      "25-50": "25-50",
+      "50-100": "50-100",
+      "< 10": "< 10",
+      "> 250": "> 250"
+    },
+    "sort": {
+      "createdAt": "Date",
+      "price": "Price"
+    },
+    "userRoles": {
+      "ADMIN": "Admin",
+      "USER": "User"
+    },
+    "userStatus": {
+      "ACTIVE": "Active",
+      "INACTIVE": "Inactive"
+    }
+  },
+  "errors": {
+    "access-denied": "Access Denied",
+    "internal-server-error": "Server Error",
+    "page-not-found": "Page Not Found",
+    "service-unavailable": "Service Unavailable",
+    "unknown": "Unknown Error"
+  },
+  "form": {
+    "buttons": {
+      "add": "Add",
+      "back": "Back",
+      "cancel": "Cancel",
+      "craft": "Craft",
+      "create": "Create",
+      "delete": "Delete",
+      "disconnect": "Disconnect",
+      "empty": "\uFEFF",
+      "forgot": "Forgot password?",
+      "hideFilter": "Hide Filters",
+      "hideFilters": "Hide filters",
+      "levelUp": "Level Up",
+      "login": "Login",
+      "logout": "Logout",
+      "mainPage": "Main Page",
+      "next": "Next",
+      "nonce": "Increment nonce",
+      "ok": "Ok",
+      "save": "Save",
+      "search": "Search",
+      "sell": "Sell",
+      "sendRequest": "Send request",
+      "showFilters": "Show filters",
+      "signup": "Sign up",
+      "submit": "Submit",
+      "upload": "Upload"
+    },
+    "hints": {
+      "emailWarning": "Warning! This user won't be able to use this site until he confirms his new email address.",
+      "markdown": "This field supports <a href=\"https://guides.github.com/features/mastering-markdown/\" target:\"_blank\">GH Flavored Markdown</a>",
+      "prompt": "You have unsaved information, are you sure you want to leave this page?"
+    },
+    "labels": {
+      "achievements": "Achievements",
+      "amount": "Amount",
+      "loot": "Loot box",
+      "claim": "Claim",
+      "coinGecko": "Coin Gecko",
+      "coinMarketCap": "Coin Market Cap",
+      "companyName": "Company name",
+      "composition": "Composition",
+      "confirm": "Confirm",
+      "contract": "Contract",
+      "contractId": "Contract",
+      "country": "Country",
+      "craft": "Craft",
+      "createdAt": "Created",
+      "dateRangeEnd": "To",
+      "dateRangeStart": "From",
+      "dismantle": "Dismantle",
+      "displayName": "Display name",
+      "email": "Email",
+      "emails": "Emails",
+      "endDate": "End date",
+      "erc1155": "ERC1155",
+      "erc20": "ERC20",
+      "erc721": "ERC721",
+      "erc998": "ERC998",
+      "gambling": "Gambling Mechanics",
+      "game": "Game",
+      "gaming": "Gaming Mechanics",
+      "gender": "Gender",
+      "grade": "Grade",
+      "imageUrl": "Avatar",
+      "integrations": "Integrations",
+      "ipfs": "IPFS",
+      "jobTitle": "Job title",
+      "json": "JSON",
+      "language": "Language",
+      "lottery": "Lottery",
+      "marketing": "Marketing Mechanics",
+      "marketplace": "Marketplace",
+      "maxAmount": "Max. price",
+      "merge": "Merge",
+      "message": "Message",
+      "meta": "Meta Mechanics",
+      "mystery": "Mystery box",
+      "name": "Name",
+      "native": "Native",
+      "oneInch": "1inch",
+      "other": "Other",
+      "pages": "Pages",
+      "password": "Password",
+      "paymentSplitter": "Payment splitter",
+      "phone": "Phone",
+      "ponzi": "Ponzi",
+      "projectBlockchain": "Blockchain",
+      "projectBudget": "Budget ($1000)",
+      "projectGoal": "Goal",
+      "projectName": "Name",
+      "projectPlatform": "Platform",
+      "projectRevenue": "Revenue",
+      "projectStage": "Stage",
+      "promo": "Promo",
+      "raffle": "Raffle",
+      "rarity": "Rarity",
+      "referralProgram": "Referral program",
+      "rent": "Rent",
+      "roles": "Roles",
+      "sort": "Sort by",
+      "staking": "Staking",
+      "stakingStatus": "Status",
+      "startDate": "Start date",
+      "status": "Status",
+      "template": "Template",
+      "text": "Your message",
+      "title": "Title",
+      "token": "Token",
+      "tokenType": "Type",
+      "type": "Type",
+      "updatedAt": "Updated",
+      "users": "Users",
+      "vesting": "Vesting",
+      "waitList": "Wait list"
+    },
+    "placeholders": {
+      "amount": "100",
+      "companyName": "Gemunion",
+      "confirm": "******",
+      "contractId": "Contract",
+      "createdAt": "Registered",
+      "displayName": "Gordon Freeman",
+      "email": "me@google.com",
+      "jobTitle": "CEO",
+      "maxAmount": "100",
+      "message": "Hi! I wanna request a demo",
+      "minAmount": "0.01",
+      "name": "Trej Gun",
+      "password": "******",
+      "phone": "+1 (555) 555-5555",
+      "projectBlockchain": "Binance",
+      "projectGoal": "We're in the process of developing a Play-to-Earn game where users can accumulate tokens by engaging in specific in-game actions.",
+      "projectName": "My awesome project",
+      "projectPlatform": "Website, mobile app for iOS and Android, watch app",
+      "projectRevenue": "We are going to generate revenue by selling in-game items on marketplace",
+      "projectStage": "We've already developed a demo mobile application and are actively seeking investments to further advance our project.",
+      "query": "Search...",
+      "search": "Search...",
+      "text": "Hi! I wanna request a demo",
+      "token": "Token"
+    },
+    "tips": {
+      "add": "Add",
+      "delete": "Delete",
+      "edit": "Edit",
+      "redeem": "Redeem",
+      "release": "Release"
+    },
+    "validations": {
+      "badInput": "{label} is invalid",
+      "customError": "???",
+      "duplicate": "{label} already in use",
+      "patternMismatch": "{label} does not match expected pattern",
+      "rangeOverflow": "{label} is too high",
+      "rangeUnderflow": "{label} is too low",
+      "stepMismatch": "{label} is invalid",
+      "tooLong": "{label} is too long",
+      "tooShort": "{label} is too short",
+      "typeMismatch": "{label} is invalid",
+      "valid": "??",
+      "valueMissing": "{label} is required",
+      "weak": "{label} is too weak",
+      "whitelistValidation": "Property should not exist"
+    }
+  },
+  "messages": {
+    "page-not-found": "Page Not Found"
+  },
+  "pages": {
+    "calculator": {
+      "description": "We glad to offer you our ",
+      "erc1155": {
+        "contract": "Allows to deploy new contracts to use inside the system as semi fungible tokens. Semi fungible tokens can not contain metadata.",
+        "requirements": "Requires NATIVE or ERC20 module to be enabled. It is needed as a currency to set the price",
+        "template": "Allows to configure token parameters (including amount of similar tokens)"
+      },
+      "erc20": {
+        "contract": "Allows to deploy new and attach existing contracts to use inside the system as a payment method. It also includes native token."
+      },
+      "erc721": {
+        "contract": "Allows to deploy new contracts to use inside the system as non fungible tokens. Non fungible tokens can contain metadata such as grade (level, size), coordinates, and rarity.",
+        "requirements": "Requires NATIVE or ERC20 module to be enabled. It is needed as a currency to set the price",
+        "template": "Is a layer of abstraction that allows to configure token parameters (including amount of similar tokens) before actual token is minted.",
+        "token": "Allows to track minted (and burned) tokens, inspect it&apos;s metadata, and related transactions"
+      },
+      "erc998": {
+        "composition": "Defined which tokens could be composed as a child",
+        "contract": "Allows to deploy new contracts to use inside the system as non fungible tokens. Non fungible tokens can contain metadata such as grade (level, size), coordinates, and rarity.",
+        "requirements": "Requires ERC721 token to be enabled. ERC998 is an extension of ERC721 and is build on top of it",
+        "template": "Is a layer of abstraction that allows to configure token parameters (including amount of similar tokens) before actual token is minted.",
+        "token": "Allows to track minted (and burned) tokens, inspect it's metadata, and related transactions"
+      },
+      "integrations": {
+        "coinGecko": "View top cryptocurrency prices live, crypto charts, market cap, and trading volume. Discover today’s new and trending coins, top crypto gainers and losers in the market.",
+        "coinMarketCap": "Top cryptocurrency prices and charts, listed by market capitalization. Free access to current and historic data for Bitcoin and thousands of altcoins.",
+        "ipfs": "Stores token metadata on IPSF (InterPlanetary File System) using service of choice (infura, pinata, web3.storage, nft.storage) service.",
+        "oneInch": "The 1inch Network unites decentralized protocols whose synergy enables the most lucrative, fastest and protected operations in the DeFi space."
+      },
+      "mechanics": {
+        "gambling": {
+          "lottery": "Requires NATIVE or ERC20 and ERC721 token to be enabled. Gambling mechanism based on guessing random numbers.",
+          "ponzi": "Requires NATIVE or ERC20 token to be enabled. Gambling mechanism based on Ponzi scheme.",
+          "raffle": "Requires NATIVE or ERC20 and ERC721 token to be enabled. Gambling mechanism based on random number."
+        },
+        "gaming": {
+          "craft": "Set token craft rules, requires at least ERC1155 module to be enabled.",
+          "dismantle": "Set token dismantle rules, requires at least ERC1155 module to be enabled.",
+          "grade": "Grade mechanic is used for leveling items.",
+          "merge": "Set token merge rules, requires ERC721 or ERC998 module to be enabled.",
+          "rent": "Allows to temporary use items user can't get otherwise."
+        },
+        "marketing": {
+          "claim": "Adds a giveaway functionality that allows users to claim an item issued by the server.",
+          "loot": "Loot boxes are used to randomize content of the box using on-chain randomness.",
+          "mystery": "Mystery boxes are used to add `rarity` parameter to tokens using on-chain randomness.",
+          "staking": "Requires ANY token to be enabled. Bank for tokens. User deposit one type of tokens and after some receives another one as interest.",
+          "vesting": "Allows to create vesting schedule for investors and partners.",
+          "waitList": "Adds a giveaway functionality that allows users to claim an item using merkel proof."
+        },
+        "meta": {
+          "achievements": "Making routine a fun process with additional reward. Requires Claim mechanic",
+          "paymentSplitter": "This financial mechanics is uses exclusively by admins to split their shares of the game revenue.",
+          "promo": "Promo is used to create time limited offer of tokens that is displayed on main page as a banner.",
+          "referralProgram": "Referral program allows user to receive percent from purchases made by his fiends."
+        }
+      },
+      "native": {
+        "contract": "Allows to add native token of the network (ETH, BNB, etc) as payment method."
+      },
+      "other": {
+        "emails": "Integrates one of possible email services for transactional emails. We recommend Mailjet.",
+        "game": "Game integration tools: message broker, balance synchronization, minimal game server with pre-configured modules for debugging or to use as a starting point",
+        "json": "JSON microservice to serve data about your token to 3rd party platforms like OpenSea and Enjinx.",
+        "marketplace": "Marketplace allows users to buy NFTs for COINS. It also acts as a user's wallet where user can see his assets, transaction history and action buttons from enabled mechanics",
+        "users": "Provides user management and authorization flow. One of the following auth providers can be picked up Native, Firebase, Google, Facebook, Cognito."
+      },
+      "title": "Price calculator"
+    },
+    "dashboard": {
+      "sections": {
+        "careers": "Careers",
+        "payment": "Payment",
+        "pricing": "Pricing",
+        "title": "Sections"
+      },
+      "title": "Dashboard"
+    },
+    "guest": {
+      "confirmation": "Please check your inbox to verify your email.",
+      "forgotPassword": "Forgot password",
+      "login": "Login",
+      "particleWallet": "Particle Wallet",
+      "signInWith": {
+        "facebook": "Sign in with Facebook",
+        "google": "Sign in with Google",
+        "metamask": "Sign in with Metamask",
+        "particle": "Sign in with Particle",
+        "walletConnect": "Sign in with Wallet Connect"
+      }
+    },
+    "landing": {
+      "advantages": {
+        "items": {
+          "item1": "<b>Conversational AI</b>Create chat bots on any platforms",
+          "item2": "<b>Blockchain</b>Emit your token on any chain",
+          "item3": "<b>Augmented reality</b>Organize event in virtual space",
+          "item4": "<b>Quantum computing</b>Coming soon"
+        },
+        "title": "Don't Worry about Web3 Complexities"
+      },
+      "benefits": {
+        "items": {
+          "01": "Modular architecture gives <b>a significant boost</b> in development speed",
+          "02": "Wide choice of tools <b>for any kind</b> of cloud-based applications",
+          "03": "Unlimited vertical and horizontal grows <b>to keep up</b> with increasing project's load",
+          "04": "Sustainable codebase with <b>good test coverage</b> tempered in production mode",
+          "05": "Convenient foundation <b>to build a bridge</b> to the blockchain world",
+          "06": "Takes advantage <b>of cutting-edge technologies</b> to take a lead in the industry"
+        },
+        "title": "What is <b>EthBerry</b>"
+      },
+      "faq": {
+        "title": "FAQ"
+      },
+      "hero": {
+        "description": "Rapid project prototyping to showcase a working demo version, test new theories, identify market needs, and engage the community",
+        "download": "Download",
+        "downloads": {
+          "bookCall": "Book a Call",
+          "pitchdeck": "Pitch Deck",
+          "showcases": "Showcases"
+        },
+        "title": {
+          "animated1": "new sales bot",
+          "animated10": "new mobile app",
+          "animated2": "new blockchain game",
+          "animated3": "new card game",
+          "animated4": "new P2E game",
+          "animated5": "new DAPP",
+          "animated6": "new launchpad",
+          "animated7": "new staking platform",
+          "animated8": "new AI assistant",
+          "animated9": "new meme coin",
+          "first": "Launch your",
+          "last": "in a matter of hours"
+        }
+      },
+      "inAction": {
+        "title": "See Gemunion in action"
+      },
+      "nfts": {
+        "items": {
+          "item1": "5 token types",
+          "item2": "20+ common blockchain mechanics",
+          "item3": "10+ integrations with popular services",
+          "item4": "Supports all EVM blockchains"
+        },
+        "megaTitle": "WITH US",
+        "title": "Start building"
+      },
+      "partners": {
+        "title": "You are in a <b>good company</b>"
+      },
+      "pricing": {
+        "description": "Start your next project <b>the proper way</b>"
+      },
+      "requestDemo": {
+        "button": "Send request",
+        "description": "Experience a live customized demo, get answers to your specific questions, and find out why Gemunion is the right choice for your startup",
+        "p1": "A brief conversation to discuss your ideas, reporting needs, and how your startup uses blockchain",
+        "p2": "Live demonstration of our Enterprise platform, tailored to the way you work",
+        "p3": "All your questions answered to make sure you have all the information you need",
+        "p4": "No commitment whatsoever",
+        "title": "Request a demo",
+        "whatExpect": "What can I expect?"
+      },
+      "requestQuotation": {
+        "button": "Send request",
+        "description": "Share your specific software requirements with us, and unlock the power of tailored solutions that align perfectly with your business needs. Our team of expert software developers will craft a customized solution to bring your vision to life.",
+        "p1": "Fill out the module selection form with your requirements and preferences for your new P2E project.",
+        "p2": "Confidentiality share your project idea with us for a thorough evaluation of how it aligns with our software solutions.",
+        "p3": "Evaluate the received quotations, considering expertise, cost, timeline, and choose the most suitable option.",
+        "title": "Request a quotation"
+      },
+      "subscribe": {
+        "title": "<b>Subscribe</b> for newsletters"
+      },
+      "testimonials": {
+        "title": "Here's what people are <b>saying about us</b>"
+      }
+    },
+    "page": {
+      "title": "{title}"
+    },
+    "partnership": {
+      "description": "At Gemunion, we are dedicated to teaming up with the most cutting-edge and creative game studios in the industry. From well-established giants to emerging talents, we are actively seeking partners who share our vision of pushing the boundaries of gaming innovation. Together, we aim to empower companies to create and grow exceptional gaming experiences. Join us in shaping the future of gaming!",
+      "makeAnOffer": {
+        "p1": "Describe your proposal concisely, emphasizing its potential benefits and how it aligns with our goals.",
+        "p2": "Clearly state what unique strengths you bring to the partnership",
+        "p3": "After submission, allow us some time to review your proposal. We appreciate your patience as we consider all submissions.",
+        "title": "Ready to become a Gemunion Partner?"
+      },
+      "title": "Become a Gemunion Partner"
+    },
+    "payment": {
+      "title": "Payment page"
+    },
+    "pressKit": {
+      "description": "The purpose of this page is to provide the visual styles of Gemunion and ensure that they are used consistently",
+      "title": "Press kit"
+    },
+    "pricing": {
+      "description": "We glad to offer you our products",
+      "title": "Price calculator"
+    },
+    "productType": {
+      "description": "Rate plans",
+      "dialog": {
+        "text": "Not all our features available for launchpad. If you see this dialog it may be the time to upgrade to self-hosted version.",
+        "title": "Time to upgrade!"
+      },
+      "title": "Product types"
+    },
+    "profile": {
+      "tabs": {
+        "general": "General",
+        "subscriptions": "Subscriptions"
+      },
+      "title": "Profile"
+    },
+    "ratePlan": {
+      "description": "Our SaaS platform is FREE OF CHARGE",
+      "title": "Rate plans"
+    },
+    "survey": {
+      "title": "Survey"
+    },
+    "tech": {
+      "description": "This is what we use under the hood",
+      "title": "Technical stack"
+    }
+  },
+  "snackbar": {
+    "created": "Successfully saved",
+    "deleted": "Successfully deleted",
+    "denied": "Denied by user",
+    "error": "Unknown Error",
+    "internalServerError": "Internal server error.",
+    "pageNotFound": "Page not found",
+    "registered": "Registration successful, please verify your email to proceed",
+    "rejectedByUser": "Rejected by user",
+    "subscriptionSuccess": "You are successfully subscribed! Thank you.",
+    "success": "Success",
+    "tooManyRequests": "Too Many Requests.",
+    "unauthorized": "Incorrect login or password",
+    "updated": "Successfully updated",
+    "userHasWrongRole": "Insufficient permissions"
+  }
+}

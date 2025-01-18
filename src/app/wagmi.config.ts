@@ -3,7 +3,7 @@ import { mainnet } from "wagmi/chains";
 import { http } from "wagmi";
 
 export const config = getDefaultConfig({
-  appName: "nextjs-demo",
+  appName: "EthBerry",
   projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID!,
   chains: [mainnet],
   transports: {

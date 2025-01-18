@@ -1,0 +1,84 @@
+"use client";
+
+import { FC } from "react";
+import { Grid } from "@mui/material";
+
+import Logo from "./logo.svg";
+import { Subscribe } from "./subscribe";
+import { ResourcesColumn } from "./resources";
+import { CompanyColumn } from "./company";
+import { SocialLinks } from "./social";
+import {
+  Root,
+  StyledFooterTop,
+  StyledContent,
+  StyledCopyrightWrapper,
+  StyledLink,
+  StyledLinksColumnHeader,
+  StyledLinksColumnWrapper,
+  StyledLogo,
+  StyledLogoWrapper,
+  StyledText,
+  StyledWrapper,
+} from "./styled";
+
+export const Footer: FC = () => {
+  return (
+    <Root>
+      <StyledWrapper>
+        <StyledContent>
+          <StyledFooterTop container spacing={4}>
+            <StyledLogoWrapper item xs={12} md={4.5}>
+              <StyledLogo component={Logo} viewBox="0 0 449.91 95.5" />
+            </StyledLogoWrapper>
+            <Grid item xs={12} md={7.5} sx={{ display: "flex", gap: 4, justifyContent: "flex-start" }}>
+              <StyledLinksColumnWrapper>
+                <StyledLinksColumnWrapper>
+                  <StyledText>EthBerry LTD</StyledText>
+                </StyledLinksColumnWrapper>
+                <StyledLinksColumnHeader sx={{ pb: 0 }}>United Arab Emirates, Dubai</StyledLinksColumnHeader>
+                <StyledLinksColumnHeader sx={{ pb: 0 }}>42 Blockchain Blvd, 0xCAFE</StyledLinksColumnHeader>
+              </StyledLinksColumnWrapper>
+            </Grid>
+          </StyledFooterTop>
+          <Grid container spacing={4}>
+            <Grid item xs={12} sm={12} md={4.5} sx={{ display: "flex", justifyContent: "flex-start" }}>
+              <Subscribe />
+            </Grid>
+            <Grid item xs={6} sm={6} md={2.5} sx={{ display: "flex", justifyContent: "flex-start" }}>
+              <StyledLinksColumnWrapper>
+                <StyledLinksColumnHeader>Powered by</StyledLinksColumnHeader>
+                <StyledLink href="https://nestjs.com" target="_blank" rel="noopener noreferrer">
+                  NestJS
+                </StyledLink>
+                <StyledLink href="https://react.dev" target="_blank" rel="noopener noreferrer">
+                  React
+                </StyledLink>
+                <StyledLink href="https://openzeppelin.com" target="_blank" rel="noopener noreferrer">
+                  OpenZepplin
+                </StyledLink>
+              </StyledLinksColumnWrapper>
+            </Grid>
+            <Grid item xs={6} sm={6} md={2.5} sx={{ display: "flex", justifyContent: "flex-start" }}>
+              <ResourcesColumn />
+            </Grid>
+            <Grid item xs={6} sm={6} md={2.5} sx={{ display: "flex", justifyContent: "flex-start" }}>
+              <CompanyColumn />
+            </Grid>
+          </Grid>
+          <Grid container sx={{ mt: 6 }}>
+            <StyledCopyrightWrapper item xs={12} md={3} sx={{ justifyContent: "flex-start" }}>
+              <StyledLink href={"tel://+971552439497"}>+971 (55) 243-9497</StyledLink>
+            </StyledCopyrightWrapper>
+            <StyledCopyrightWrapper item xs={12} md={6} sx={{ justifyContent: "center" }}>
+              <SocialLinks />
+            </StyledCopyrightWrapper>
+            <StyledCopyrightWrapper item xs={12} md={3} sx={{ textAlign: "right" }}>
+              ©{new Date().getFullYear()} EthBerry. All Rights Reserved
+            </StyledCopyrightWrapper>
+          </Grid>
+        </StyledContent>
+      </StyledWrapper>
+    </Root>
+  );
+};

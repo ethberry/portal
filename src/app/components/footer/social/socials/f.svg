@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000007429143059373867880000009895883778582005381_);}
+	.st1{clip-path:url(#SVGID_00000163061749618323169750000014077941531045505722_);fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<defs>
+			<circle id="SVGID_1_" cx="15" cy="15" r="15"/>
+		</defs>
+		<clipPath id="SVGID_00000000902960506371987230000012771389824021173639_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<circle style="clip-path:url(#SVGID_00000000902960506371987230000012771389824021173639_);" cx="15" cy="15" r="15"/>
+	</g>
+	<g>
+		<defs>
+			<circle id="SVGID_00000036215572815479164930000002612778221652705920_" cx="15" cy="15" r="15"/>
+		</defs>
+		<clipPath id="SVGID_00000121985455131527197500000013176281761635792819_">
+			<use xlink:href="#SVGID_00000036215572815479164930000002612778221652705920_"  style="overflow:visible;"/>
+		</clipPath>
+		<path style="clip-path:url(#SVGID_00000121985455131527197500000013176281761635792819_);fill:#FFFFFF;" d="M12.71,29.81V19.32
+			H8.94V15h3.77c0,0-0.07-3.9,0.09-4.63c0.17-0.73,0.43-2.34,1.84-3.33c1.2-0.85,1.98-1.11,3.64-1.11c1.66,0,3.35,0.29,3.35,0.29
+			v3.66c0,0-1.95-0.13-2.57,0.02c-0.62,0.14-1.26,0.38-1.57,1.28c-0.31,0.9-0.16,3.83-0.16,3.83h4.12l-0.62,4.32H17.3v11.13h-4.59
+			V29.81z"/>
+	</g>
+</g>
+</svg>

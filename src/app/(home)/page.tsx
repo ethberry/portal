@@ -1,6 +1,6 @@
 import { dehydrate, HydrationBoundary, QueryClient } from "@tanstack/react-query";
 
-import { Landing } from "@/app/landing";
+import { Landing } from "@/app/(home)/lending";
 
 export default async function Home() {
   const queryClient = new QueryClient();

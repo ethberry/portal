@@ -36,7 +36,7 @@ export const Hero: FC = () => {
   return (
     <Root>
       <StyledContent>
-        <StyledImage component={Image} src={Logo} alt="Gemunion Hero image" />
+        <StyledImage component={Image} src={Logo} alt="EthBerry Hero image" />
         <StyledHeroTitle>
           <FormattedMessage id="pages.landing.hero.title.first" />
           <StyledBold sx={{ height: 54 }}>

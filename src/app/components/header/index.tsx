@@ -7,6 +7,8 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 import Logo from "./logo.svg";
 import { StyledAppBar, StyledLink, StyledLogo, StyledToolbar } from "./styled";
+import { Menu } from "./menu";
+import { MobileMenu } from "./mobile-menu";
 
 export const Header: FC = () => {
   const scrolled = useScrollTrigger({
@@ -19,7 +21,7 @@ export const Header: FC = () => {
       <StyledToolbar scrolled={scrolled}>
         <Grid container>
           <Grid item xs={12} md={5} justifyContent="space-between" sx={{ display: "flex", alignItems: "center" }}>
-            <Hidden mdDown>{/*<Menu />*/}</Hidden>
+            <Hidden mdDown>{<Menu />}</Hidden>
             <Hidden mdUp>
               <StyledLink component={Link} href="/">
                 <StyledLogo scrolled={scrolled} viewBox="0 0 500 100">
@@ -27,7 +29,7 @@ export const Header: FC = () => {
                 </StyledLogo>
               </StyledLink>
 
-              {/*<MobileMenu />*/}
+              {<MobileMenu />}
             </Hidden>
           </Grid>
           <Hidden mdDown>

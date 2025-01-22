@@ -233,7 +233,7 @@
     },
     "placeholders": {
       "amount": "100",
-      "companyName": "Gemunion",
+      "companyName": "EthBerry",
       "confirm": "******",
       "contractId": "Contract",
       "createdAt": "Registered",
@@ -424,7 +424,7 @@
         }
       },
       "inAction": {
-        "title": "See Gemunion in action"
+        "title": "See EthBerry in action"
       },
       "nfts": {
         "items": {
@@ -444,7 +444,7 @@
       },
       "requestDemo": {
         "button": "Send request",
-        "description": "Experience a live customized demo, get answers to your specific questions, and find out why Gemunion is the right choice for your startup",
+        "description": "Experience a live customized demo, get answers to your specific questions, and find out why EthBerry is the right choice for your startup",
         "p1": "A brief conversation to discuss your ideas, reporting needs, and how your startup uses blockchain",
         "p2": "Live demonstration of our Enterprise platform, tailored to the way you work",
         "p3": "All your questions answered to make sure you have all the information you need",
@@ -471,7 +471,7 @@
       "title": "{title}"
     },
     "partnership": {
-      "description": "At Gemunion, we are dedicated to teaming up with the most cutting-edge and creative game studios in the industry. From well-established giants to emerging talents, we are actively seeking partners who share our vision of pushing the boundaries of gaming innovation. Together, we aim to empower companies to create and grow exceptional gaming experiences. Join us in shaping the future of gaming!",
+      "description": "At EthBerry, we are dedicated to teaming up with the most cutting-edge and creative game studios in the industry. From well-established giants to emerging talents, we are actively seeking partners who share our vision of pushing the boundaries of gaming innovation. Together, we aim to empower companies to create and grow exceptional gaming experiences. Join us in shaping the future of gaming!",
       "makeAnOffer": {
         "p1": "Describe your proposal concisely, emphasizing its potential benefits and how it aligns with our goals.",
         "p2": "Clearly state what unique strengths you bring to the partnership",

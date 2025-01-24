@@ -1,12 +1,5 @@
-import { dehydrate, HydrationBoundary, QueryClient } from "@tanstack/react-query";
-import { PressKit } from "@/app/press-kit/content";
+import { PressKitContent } from "./content";
 
-export default async function Home() {
-  const queryClient = new QueryClient();
-
-  return (
-    <HydrationBoundary state={dehydrate(queryClient)}>
-      <PressKit />
-    </HydrationBoundary>
-  );
+export default async function PressKit() {
+  return <PressKitContent />;
 }

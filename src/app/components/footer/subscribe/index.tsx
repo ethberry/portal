@@ -2,7 +2,7 @@ import { FC } from "react";
 import { FormattedMessage } from "react-intl";
 import { TextField, Button } from "@mui/material";
 
-import { StyledBold } from "@/app/components/common/styled";
+import { StyledBold } from "../../common/styled";
 
 import { Root, StyledEmailWrapper, StyledForm, StyledHeader, StyledSubmitWrapper } from "./styled";
 

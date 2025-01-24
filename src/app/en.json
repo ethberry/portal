@@ -483,6 +483,9 @@
     "payment": {
       "title": "Payment page"
     },
+    "events": {
+      "title": "Events"
+    },
     "pressKit": {
       "description": "The purpose of this page is to provide the visual styles of Gemunion and ensure that they are used consistently",
       "title": "Press kit"

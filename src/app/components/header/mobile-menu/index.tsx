@@ -1,9 +1,9 @@
 import { FC, useState } from "react";
 import { Box, IconButton, MenuList, SwipeableDrawer } from "@mui/material";
 import { Menu as MenuIcon } from "@mui/icons-material";
-import { EnabledLanguages } from "@/app/i18n";
 import { Localization } from "@ethberry/provider-localization";
 
+import { EnabledLanguages } from "../../../i18n";
 import { useMenuItems } from "../menu/use-menu-items";
 import { StyledMenuWrapper, StyledMenuTop } from "./styled";
 import { DropdownMenuItem } from "./dropdown";

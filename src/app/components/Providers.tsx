@@ -10,10 +10,10 @@ import { createStore, ReduxProvider } from "@ethberry/redux";
 import { ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 
-import { ReactQueryClientProvider } from "@/app/components/ReactQueryClientProvider";
-import { config } from "@/app/wagmi.config";
-import { theme } from "@/app/theme";
-import { EnabledLanguages, i18n } from "@/app/i18n";
+import { config } from "../wagmi.config";
+import { theme } from "../theme";
+import { EnabledLanguages, i18n } from "../i18n";
+import { ReactQueryClientProvider } from "./ReactQueryClientProvider";
 
 export default function Providers({ children }: PropsWithChildren) {
   return (

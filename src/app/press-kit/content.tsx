@@ -1,10 +1,12 @@
 "use client";
 
+import { FC } from "react";
+
 import { Button, Card, CardActions, CardMedia, Grid, Typography, useTheme } from "@mui/material";
 import { FormattedMessage } from "react-intl";
-import { Root } from "@/app/components/common/styled";
+import { Root } from "../components/common/styled";
 
-export const PressKit = () => {
+export const PressKitContent: FC = () => {
   const theme = useTheme();
 
   return (

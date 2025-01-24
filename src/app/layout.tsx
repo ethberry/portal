@@ -2,10 +2,10 @@ import { PropsWithChildren } from "react";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 
-import Providers from "@/app/components/Providers";
+import Providers from "./components/Providers";
+import { Header } from "./components/header";
+import { Footer } from "./components/footer";
 import { Root, StyledContainer } from "./styled";
-import { Header } from "@/app/components/header";
-import { Footer } from "@/app/components/footer";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],

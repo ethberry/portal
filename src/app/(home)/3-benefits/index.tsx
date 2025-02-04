@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import { Grid } from "@mui/material";
+import { Grid2 } from "@mui/material";
 import { FormattedMessage } from "react-intl";
 import Cup from "./images/benefits-cup.png";
 import CupConfeti from "./images/benefits-cup-confeti.png";
@@ -15,7 +15,7 @@ import {
   StyledBenefitTitle,
   StyledCupImage,
   StyledContent,
-  StyledGrid,
+  StyledGrid2,
   StyledHeader,
   StyledConfettiImage,
   StyledImageWrapper,
@@ -33,9 +33,9 @@ export const Benefits: FC = () => {
             }}
           />
         </StyledHeader>
-        <StyledGrid container spacing={1}>
+        <StyledGrid2 container spacing={1}>
           {[1, 2, 3, 4, 5, 6].map(benefit => (
-            <Grid key={benefit} item xs={12} sm={6} lg={4}>
+            <Grid2 key={benefit} size={{ xs: 12, sm: 6, lg: 4 }}>
               <StyledBenefit>
                 <StyledBenefitTitle>0{benefit}</StyledBenefitTitle>
                 <StyledBenefitDescription>
@@ -45,9 +45,9 @@ export const Benefits: FC = () => {
                   />
                 </StyledBenefitDescription>
               </StyledBenefit>
-            </Grid>
+            </Grid2>
           ))}
-        </StyledGrid>
+        </StyledGrid2>
       </StyledContent>
       <StyledImageWrapper>
         <StyledCupImage component={Image} src={Cup} alt="" />

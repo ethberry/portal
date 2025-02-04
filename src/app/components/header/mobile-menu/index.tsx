@@ -5,7 +5,7 @@ import { Localization } from "@ethberry/provider-localization";
 
 import { EnabledLanguages } from "../../../i18n";
 import { useMenuItems } from "../menu/use-menu-items";
-import { StyledMenuWrapper, StyledMenuTop } from "./styled";
+import { StyledMenuTop, StyledMenuWrapper } from "./styled";
 import { DropdownMenuItem } from "./dropdown";
 import { MenuItem } from "./menu-item";
 
@@ -24,7 +24,7 @@ export const MobileMenu: FC = () => {
   const iOS = typeof navigator !== "undefined" && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
   return (
-    <Box sx={{ mr: 2 }}>
+    <Box sx={{ mr: 2, display: { xs: "flex", md: "none" } }}>
       <IconButton onClick={openDrawer}>
         <MenuIcon />
       </IconButton>

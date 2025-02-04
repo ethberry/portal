@@ -1,4 +1,4 @@
-import { FC, useEffect } from "react";
+import { FC } from "react";
 import Link from "next/link";
 
 import type { IMenuItem } from "../use-menu-items";
@@ -12,8 +12,6 @@ export interface IMenuItemProps {
 
 export const MenuItem: FC<IMenuItemProps> = props => {
   const { menuItem, withBackground } = props;
-
-  useEffect(() => {}, [location.pathname]);
 
   if (!menuItem.link || menuItem.children?.length) {
     return <DropdownMenuItem menuItem={menuItem} withBackground />;

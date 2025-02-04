@@ -21,7 +21,7 @@ export const ProductTypeSelection: FC<IProductTypeSelectionProps> = () => {
   return (
     <StyledCardsWrapper container justifyContent="center">
       {productTypes.map((type, index) => (
-        <StyledCardWrapper item xs={12} sm={12} md={6} lg={4} key={index}>
+        <StyledCardWrapper size={{ xs: 12, sm: 12, md: 6, lg: 4 }} key={index}>
           {type.icons.map(icon => (
             <StyledScrewNut component="img" src={icon.src} sx={icon.sx} key={icon.src} />
           ))}

@@ -10,7 +10,7 @@ export const Menu: FC = () => {
   const menuLinks = useMenuItems();
 
   return (
-    <Root>
+    <Root sx={{ display: { xs: "none", md: "flex" } }}>
       <StyledImage component={Image} src={Bars} alt="EthBerry menu" />
       <MenuWrapper>
         {menuLinks.map(item => {

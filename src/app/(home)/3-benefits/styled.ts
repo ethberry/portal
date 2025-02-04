@@ -1,5 +1,5 @@
 import { styled } from "@mui/material/styles";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid2, Typography } from "@mui/material";
 
 export const Root = styled(Box)(({ theme }) => ({
   display: "flex",
@@ -36,7 +36,7 @@ export const StyledHeader = styled(Typography)(({ theme }) => ({
   },
 }));
 
-export const StyledGrid = styled(Grid)(({ theme }) => ({
+export const StyledGrid2 = styled(Grid2)(({ theme }) => ({
   padding: theme.spacing(7, 4, 10),
   maxWidth: 1200,
   zIndex: 2,

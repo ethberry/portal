@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import { Grid, Hidden, useScrollTrigger } from "@mui/material";
+import { Grid2, useScrollTrigger } from "@mui/material";
 import Link from "next/link";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
@@ -19,34 +19,39 @@ export const Header: FC = () => {
   return (
     <StyledAppBar position="fixed" elevation={scrolled ? 1 : 0}>
       <StyledToolbar scrolled={scrolled}>
-        <Grid container>
-          <Grid item xs={12} md={5} justifyContent="space-between" sx={{ display: "flex", alignItems: "center" }}>
-            <Hidden mdDown>{<Menu />}</Hidden>
-            <Hidden mdUp>
-              <StyledLink component={Link} href="/">
-                <StyledLogo scrolled={scrolled} viewBox="0 0 500 100">
-                  <Logo />
-                </StyledLogo>
-              </StyledLink>
+        <Grid2 container style={{ width: "100%" }}>
+          <Grid2 size={{ xs: 12, md: 5 }} justifyContent="space-between" sx={{ display: "flex", alignItems: "center" }}>
+            <Menu />
 
-              {<MobileMenu />}
-            </Hidden>
-          </Grid>
-          <Hidden mdDown>
-            <Grid item xs={12} md={3.5} justifyContent="flex-start" sx={{ display: "flex", alignItems: "center" }}>
-              <StyledLink component={Link} href="/">
-                <StyledLogo scrolled={scrolled} viewBox="0 0 449.91 95.5">
-                  <Logo />
-                </StyledLogo>
-              </StyledLink>
-            </Grid>
-            <Grid item xs={12} md={3.5} justifyContent="flex-end" sx={{ display: "flex", alignItems: "center" }}>
-              {/*<Localization languages={Object.values(EnabledLanguages)} />*/}
-              <ConnectButton />
-              {/*<Sections />*/}
-            </Grid>
-          </Hidden>
-        </Grid>
+            <StyledLink component={Link} href="/" sx={{ display: { xs: "flex", md: "none" } }}>
+              <StyledLogo scrolled={scrolled} viewBox="0 0 500 100">
+                <Logo />
+              </StyledLogo>
+            </StyledLink>
+
+            <MobileMenu />
+          </Grid2>
+          <Grid2
+            size={{ xs: 12, md: 3.5 }}
+            justifyContent="flex-start"
+            sx={{ display: { xs: "none", md: "flex" }, alignItems: "center" }}
+          >
+            <StyledLink component={Link} href="/">
+              <StyledLogo scrolled={scrolled} viewBox="0 0 500 100">
+                <Logo />
+              </StyledLogo>
+            </StyledLink>
+          </Grid2>
+          <Grid2
+            size={{ xs: 12, md: 3.5 }}
+            justifyContent="flex-end"
+            sx={{ display: { xs: "none", md: "flex" }, alignItems: "center" }}
+          >
+            {/*<Localization languages={Object.values(EnabledLanguages)} />*/}
+            <ConnectButton />
+            {/*<Sections />*/}
+          </Grid2>
+        </Grid2>
       </StyledToolbar>
     </StyledAppBar>
   );

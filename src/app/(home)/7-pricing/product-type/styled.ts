@@ -1,12 +1,12 @@
-import { Box, Button, Card, CardContent, Grid, Typography } from "@mui/material";
+import { Box, Button, Card, CardContent, Grid2, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
-export const StyledCardsWrapper = styled(Grid)(({ theme }) => ({
+export const StyledCardsWrapper = styled(Grid2)(({ theme }) => ({
   width: 1200,
   margin: theme.spacing(2, "auto"),
 }));
 
-export const StyledCardWrapper = styled(Grid)(({ theme }) => ({
+export const StyledCardWrapper = styled(Grid2)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",

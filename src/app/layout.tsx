@@ -31,7 +31,6 @@ export default function RootLayout(props: PropsWithChildren) {
             <StyledContainer maxWidth="xl">{children}</StyledContainer>
             <Footer />
           </Root>
-          {/*<Footer />*/}
         </Providers>
       </body>
     </html>

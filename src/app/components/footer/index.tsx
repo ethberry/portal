@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import { Grid } from "@mui/material";
+import { Grid2 } from "@mui/material";
 
 import Logo from "./logo.svg";
 import { Subscribe } from "./subscribe";
@@ -10,9 +10,9 @@ import { CompanyColumn } from "./company";
 import { SocialLinks } from "./social";
 import {
   Root,
-  StyledFooterTop,
   StyledContent,
   StyledCopyrightWrapper,
+  StyledFooterTop,
   StyledLink,
   StyledLinksColumnHeader,
   StyledLinksColumnWrapper,
@@ -28,10 +28,10 @@ export const Footer: FC = () => {
       <StyledWrapper>
         <StyledContent>
           <StyledFooterTop container spacing={4}>
-            <StyledLogoWrapper item xs={12} md={4.5}>
+            <StyledLogoWrapper size={{ xs: 12, md: 4.5 }}>
               <StyledLogo component={Logo} viewBox="0 0 449.91 95.5" />
             </StyledLogoWrapper>
-            <Grid item xs={12} md={7.5} sx={{ display: "flex", gap: 4, justifyContent: "flex-start" }}>
+            <Grid2 size={{ xs: 12, md: 7.5 }} sx={{ display: "flex", gap: 4, justifyContent: "flex-start" }}>
               <StyledLinksColumnWrapper>
                 <StyledLinksColumnWrapper>
                   <StyledText>EthBerry LTD</StyledText>
@@ -39,13 +39,13 @@ export const Footer: FC = () => {
                 <StyledLinksColumnHeader sx={{ pb: 0 }}>United Arab Emirates, Dubai</StyledLinksColumnHeader>
                 <StyledLinksColumnHeader sx={{ pb: 0 }}>42 Blockchain Blvd, 0xCAFE</StyledLinksColumnHeader>
               </StyledLinksColumnWrapper>
-            </Grid>
+            </Grid2>
           </StyledFooterTop>
-          <Grid container spacing={4}>
-            <Grid item xs={12} sm={12} md={4.5} sx={{ display: "flex", justifyContent: "flex-start" }}>
+          <Grid2 container spacing={4}>
+            <Grid2 size={{ xs: 12, sm: 112, md: 4.5 }} sx={{ display: "flex", justifyContent: "flex-start" }}>
               <Subscribe />
-            </Grid>
-            <Grid item xs={6} sm={6} md={2.5} sx={{ display: "flex", justifyContent: "flex-start" }}>
+            </Grid2>
+            <Grid2 size={{ xs: 6, sm: 6, md: 2.5 }} sx={{ display: "flex", justifyContent: "flex-start" }}>
               <StyledLinksColumnWrapper>
                 <StyledLinksColumnHeader>Powered by</StyledLinksColumnHeader>
                 <StyledLink href="https://nestjs.com" target="_blank" rel="noopener noreferrer">
@@ -58,25 +58,25 @@ export const Footer: FC = () => {
                   OpenZepplin
                 </StyledLink>
               </StyledLinksColumnWrapper>
-            </Grid>
-            <Grid item xs={6} sm={6} md={2.5} sx={{ display: "flex", justifyContent: "flex-start" }}>
+            </Grid2>
+            <Grid2 size={{ xs: 6, md: 2.5 }} sx={{ display: "flex", justifyContent: "flex-start" }}>
               <ResourcesColumn />
-            </Grid>
-            <Grid item xs={6} sm={6} md={2.5} sx={{ display: "flex", justifyContent: "flex-start" }}>
+            </Grid2>
+            <Grid2 size={{ xs: 6, sm: 6, md: 2.5 }} sx={{ display: "flex", justifyContent: "flex-start" }}>
               <CompanyColumn />
-            </Grid>
-          </Grid>
-          <Grid container sx={{ mt: 6 }}>
-            <StyledCopyrightWrapper item xs={12} md={3} sx={{ justifyContent: "flex-start" }}>
+            </Grid2>
+          </Grid2>
+          <Grid2 container sx={{ mt: 6 }}>
+            <StyledCopyrightWrapper size={{ xs: 12, md: 3 }} sx={{ justifyContent: "flex-start" }}>
               <StyledLink href={"tel://+971552439497"}>+971 (55) 243-9497</StyledLink>
             </StyledCopyrightWrapper>
-            <StyledCopyrightWrapper item xs={12} md={6} sx={{ justifyContent: "center" }}>
+            <StyledCopyrightWrapper size={{ xs: 12, md: 6 }} sx={{ justifyContent: "center" }}>
               <SocialLinks />
             </StyledCopyrightWrapper>
-            <StyledCopyrightWrapper item xs={12} md={3} sx={{ textAlign: "right" }}>
+            <StyledCopyrightWrapper size={{ xs: 12, md: 3 }} sx={{ textAlign: "right" }}>
               ©{new Date().getFullYear()} EthBerry. All Rights Reserved
             </StyledCopyrightWrapper>
-          </Grid>
+          </Grid2>
         </StyledContent>
       </StyledWrapper>
     </Root>

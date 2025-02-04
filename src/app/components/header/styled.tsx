@@ -1,6 +1,6 @@
 "use client";
 
-import { AppBar, Box, Link, SvgIcon, SvgIconProps, Toolbar, ToolbarProps } from "@mui/material";
+import { AppBar, Link, SvgIcon, SvgIconProps, Toolbar, ToolbarProps } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 export interface IScrolledProps {
@@ -65,10 +65,6 @@ export const StyledLogo = styled(SvgIcon, { shouldForwardProp: prop => prop !== 
     height: 30,
   },
 })) as any;
-
-export const StyledGrow = styled(Box)({
-  flexGrow: 1,
-});
 
 export const StyledLink = styled(Link)(({ theme }) => ({
   display: "flex",

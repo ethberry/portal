@@ -3,9 +3,6 @@
 import { FC } from "react";
 import { Grid2 } from "@mui/material";
 import { FormattedMessage } from "react-intl";
-import Cup from "./images/benefits-cup.png";
-import CupConfeti from "./images/benefits-cup-confeti.png";
-import Image from "next/image";
 
 import { StyledBold } from "../../components/common/styled";
 import {
@@ -50,8 +47,8 @@ export const Benefits: FC = () => {
         </StyledGrid2>
       </StyledContent>
       <StyledImageWrapper>
-        <StyledCupImage component={Image} src={Cup} alt="" />
-        <StyledConfettiImage component={Image} src={CupConfeti} alt="" />
+        <StyledCupImage component="img" src="/landing/benefits/benefits-cup.png" alt="" />
+        <StyledConfettiImage component="img" src="/landing/benefits/benefits-cup-confeti.png" alt="" />
       </StyledImageWrapper>
     </Root>
   );

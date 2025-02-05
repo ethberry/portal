@@ -2,8 +2,6 @@
 
 import { FC } from "react";
 import { FormattedMessage } from "react-intl";
-import Image from "next/image";
-import RobotHand from "./images/robot-hand.png";
 
 import MarkerTimeIcon from "./images/marker-time.svg";
 import BullseyeIcon from "./images/bullseye-arrow.svg";
@@ -25,7 +23,7 @@ import {
 export const Advantages: FC = () => {
   return (
     <Root>
-      <StyledImage component={Image} src={RobotHand} alt="" />
+      <StyledImage component="img" src="/landing/advantages/robot-hand.png" alt="" />
       <StyledContent>
         <StyledItems>
           <StyledItemTop component={"div"}>

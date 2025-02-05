@@ -14,7 +14,7 @@ export const ResourcesColumn: FC = () => {
   const items = [
     {
       id: 2,
-      link: "https://gemunion.github.io",
+      link: "https://docs.ethberry.io",
       title: docs,
       external: true,
     },

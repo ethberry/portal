@@ -36,8 +36,12 @@ export const Footer: FC = () => {
                 <StyledLinksColumnWrapper>
                   <StyledText>EthBerry LTD</StyledText>
                 </StyledLinksColumnWrapper>
-                <StyledLinksColumnHeader sx={{ pb: 0 }}>United Arab Emirates, Dubai</StyledLinksColumnHeader>
-                <StyledLinksColumnHeader sx={{ pb: 0 }}>42 Blockchain Blvd, 0xCAFE</StyledLinksColumnHeader>
+                <StyledLinksColumnHeader sx={{ pb: 0 }}>
+                  Georgia, Tbilisi, Krtsanisi District, Nino and Ilia
+                </StyledLinksColumnHeader>
+                <StyledLinksColumnHeader sx={{ pb: 0 }}>
+                  Nakashidze Street, N1, Flat N3, Building N3
+                </StyledLinksColumnHeader>
               </StyledLinksColumnWrapper>
             </Grid2>
           </StyledFooterTop>
@@ -68,7 +72,7 @@ export const Footer: FC = () => {
           </Grid2>
           <Grid2 container sx={{ mt: 6 }}>
             <StyledCopyrightWrapper size={{ xs: 12, md: 3 }} sx={{ justifyContent: "flex-start" }}>
-              <StyledLink href={"tel://+971552439497"}>+971 (55) 243-9497</StyledLink>
+              <StyledLink href={"tel://+955568797178"}>+955 (568) 79-71-78</StyledLink>
             </StyledCopyrightWrapper>
             <StyledCopyrightWrapper size={{ xs: 12, md: 6 }} sx={{ justifyContent: "center" }}>
               <SocialLinks />

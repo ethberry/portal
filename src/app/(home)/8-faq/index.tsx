@@ -10,8 +10,8 @@ import {
   StyledAccordion,
   StyledAccordionDetails,
   StyledAccordionSummary,
-  StyledHeader,
   StyledContent,
+  StyledHeader,
 } from "./styled";
 
 export const Faq: FC = () => {
@@ -39,12 +39,14 @@ export const Faq: FC = () => {
             aria-controls="panel1-content"
             id="panel1-header"
           >
-            Why should I choose an outsourcing company?
+            Why should I choose small development studio?
           </StyledAccordionSummary>
           <StyledAccordionDetails>
             <p>
-              Outsourcing allows you to access a team of experienced professionals without the overhead costs of hiring
-              in-house. It’s cost-efficient, scalable, and ensures high-quality results.
+              In a small development studio, you get all the expertise you need without the bureaucracy that often comes
+              with larger outsourcing companies. This allows for faster decision-making, better communication, and a
+              more personalized experience. Additionally, small studios tend to offer more competitive pricing due to
+              lower operational costs, making them a cost-effective choice without compromising on quality.
             </p>
           </StyledAccordionDetails>
         </StyledAccordion>
@@ -60,7 +62,7 @@ export const Faq: FC = () => {
           <StyledAccordionDetails>
             <p>
               We specialize in blockchain, gaming, and AI solutions, but our team’s expertise extends to various
-              domains, including edtech, e-commerce, and more.
+              domains, including edtech, fintech, e-commerce, and more.
             </p>
           </StyledAccordionDetails>
         </StyledAccordion>

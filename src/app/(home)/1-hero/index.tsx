@@ -17,6 +17,7 @@ import {
   StyledHeroDescription,
   StyledHeroTitle,
   StyledImage,
+  StyledButton,
 } from "./styled";
 
 export const Hero: FC = () => {
@@ -64,22 +65,22 @@ export const Hero: FC = () => {
           <StyledDownloadButton
             id="pitchdeck-button"
             component="a"
-            href="https://calendly.com/trejgun/30min"
+            href="https://docsend.com/v/72jjy/ethberry"
             target="_blank"
             size="large"
           >
             <Box component={Image} src={Clouds} sx={{ width: 24, height: 16, mr: 1.7 }} alt="" />
-            <FormattedMessage id="pages.landing.hero.downloads.bookCall" />
+            <FormattedMessage id="pages.landing.hero.downloads.showcases" />
           </StyledDownloadButton>
-          {/*<StyledButton*/}
-          {/*  id="showcases-button"*/}
-          {/*  component="a"*/}
-          {/*  href="https://calendly.com/trejgun/30min"*/}
-          {/*  target="_blank"*/}
-          {/*  size="large"*/}
-          {/*>*/}
-          {/*  <FormattedMessage id="pages.landing.hero.downloads.pitchdeck" />*/}
-          {/*</StyledButton>*/}
+          <StyledButton
+            id="book-a-call-button"
+            component="a"
+            href="https://calendly.com/trejgun/30min"
+            target="_blank"
+            size="large"
+          >
+            <FormattedMessage id="pages.landing.hero.downloads.bookCall" />
+          </StyledButton>
         </StyledButtonWrapper>
       </StyledContent>
     </Root>

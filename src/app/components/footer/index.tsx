@@ -40,7 +40,7 @@ export const Footer: FC = () => {
                   Georgia, Tbilisi, Krtsanisi District, Nino and Ilia
                 </StyledLinksColumnHeader>
                 <StyledLinksColumnHeader sx={{ pb: 0 }}>
-                  Nakashidze Street, N1, Flat N3, Building N3
+                  Nakashidze Street, N1, Office N3, Building N3
                 </StyledLinksColumnHeader>
               </StyledLinksColumnWrapper>
             </Grid2>

@@ -3,7 +3,7 @@
 import { FC } from "react";
 import { Grid2 } from "@mui/material";
 
-import Logo from "./logo.svg";
+import Logo from "./logo_text.svg";
 import { Subscribe } from "./subscribe";
 import { ResourcesColumn } from "./resources";
 import { CompanyColumn } from "./company";
@@ -29,7 +29,7 @@ export const Footer: FC = () => {
         <StyledContent>
           <StyledFooterTop container spacing={4}>
             <StyledLogoWrapper size={{ xs: 12, md: 4.5 }}>
-              <StyledLogo component={Logo} viewBox="0 0 449.91 95.5" />
+              <StyledLogo component={Logo} viewBox="0 0 500 100" />
             </StyledLogoWrapper>
             <Grid2 size={{ xs: 12, md: 7.5 }} sx={{ display: "flex", gap: 4, justifyContent: "flex-start" }}>
               <StyledLinksColumnWrapper>
@@ -60,6 +60,9 @@ export const Footer: FC = () => {
                 </StyledLink>
                 <StyledLink href="https://openzeppelin.com" target="_blank" rel="noopener noreferrer">
                   OpenZepplin
+                </StyledLink>
+                <StyledLink href="https://vercel.com" target="_blank" rel="noopener noreferrer">
+                  Vercel
                 </StyledLink>
               </StyledLinksColumnWrapper>
             </Grid2>

@@ -151,7 +151,6 @@
     "labels": {
       "achievements": "Achievements",
       "amount": "Amount",
-      "loot": "Loot box",
       "claim": "Claim",
       "coinGecko": "Coin Gecko",
       "coinMarketCap": "Coin Market Cap",
@@ -185,17 +184,9 @@
       "jobTitle": "Job title",
       "json": "JSON",
       "language": "Language",
-      "lottery": "Lottery",
-      "marketing": "Marketing Mechanics",
-      "marketplace": "Marketplace",
-      "maxAmount": "Max. price",
-      "merge": "Merge",
       "message": "Message",
-      "meta": "Meta Mechanics",
-      "mystery": "Mystery box",
       "name": "Name",
       "native": "Native",
-      "oneInch": "1inch",
       "other": "Other",
       "pages": "Pages",
       "password": "Password",
@@ -216,8 +207,6 @@
       "rent": "Rent",
       "roles": "Roles",
       "sort": "Sort by",
-      "staking": "Staking",
-      "stakingStatus": "Status",
       "startDate": "Start date",
       "status": "Status",
       "template": "Template",
@@ -363,6 +352,9 @@
       },
       "title": "Dashboard"
     },
+    "events": {
+      "title": "Events"
+    },
     "guest": {
       "confirmation": "Please check your inbox to verify your email.",
       "forgotPassword": "Forgot password",
@@ -482,9 +474,6 @@
     },
     "payment": {
       "title": "Payment page"
-    },
-    "events": {
-      "title": "Events"
     },
     "pressKit": {
       "description": "The purpose of this page is to provide the visual styles of Gemunion and ensure that they are used consistently",

@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 export const Root = styled(Box)(({ theme }) => ({
@@ -11,7 +11,7 @@ export const Root = styled(Box)(({ theme }) => ({
       width: "100%",
     },
   },
-}));
+})) as typeof Box;
 
 export const StyledHeader = styled(Typography)(({ theme }) => ({
   ...theme.typography.h6,
@@ -24,7 +24,7 @@ export const StyledHeader = styled(Typography)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     fontSize: 18,
   },
-}));
+})) as typeof Typography;
 
 export const StyledForm = styled(Box)(({ theme }) => ({
   display: "flex",
@@ -36,11 +36,14 @@ export const StyledForm = styled(Box)(({ theme }) => ({
     justifyContent: "center",
     flexDirection: "column",
   },
-}));
+})) as typeof Box;
 
 export const StyledEmailWrapper = styled(Box)(({ theme }) => ({
   flex: 1,
   width: "100%",
+  "& .MuiOutlinedInput-root": {
+    borderRadius: theme.spacing(2),
+  },
   "& .MuiInputBase-input": {
     color: theme.palette.primary.contrastText,
   },
@@ -57,12 +60,12 @@ export const StyledEmailWrapper = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     width: "100%",
   },
-}));
+})) as typeof Box;
 
 export const StyledSubmitWrapper = styled(Box)(({ theme }) => ({
   width: 150,
   "& > .MuiButton-root": {
-    marginTop: theme.spacing(1),
+    marginTop: theme.spacing(0),
     "&:disabled": {
       backgroundColor: theme.palette.primary.main,
       color: theme.palette.primary.contrastText,
@@ -76,16 +79,10 @@ export const StyledSubmitWrapper = styled(Box)(({ theme }) => ({
       marginTop: 0,
     },
   },
-}));
+})) as typeof Box;
 
-export const StyledDescription = styled(Typography)(({ theme }) => ({
-  fontSize: 20,
-  fontWeight: 500,
-  margin: theme.spacing(1, 0),
-  [theme.breakpoints.down("md")]: {
-    fontSize: 16,
-    fontWeight: 400,
-    marginBottom: 0,
-    textAlign: "center",
-  },
-})) as typeof Typography;
+export const StyledButton = styled(Button)(({ theme }) => ({
+  borderRadius: theme.spacing(2),
+  marginTop: theme.spacing(2),
+  height: 56,
+})) as typeof Button;

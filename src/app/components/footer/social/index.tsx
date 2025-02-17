@@ -21,7 +21,7 @@ export const SocialLinks: FC = () => {
       <StyledLink href="https://github.com/ethberry" target="_blank">
         <StyledLogo component={GithubLogo} viewBox="0 0 30 30" />
       </StyledLink>
-      <StyledLink href="https://www.facebook.com/gemunion" target="_blank">
+      <StyledLink href="https://www.facebook.com/ethberry" target="_blank">
         <StyledLogo component={FacebookLogo} viewBox="0 0 30 30" />
       </StyledLink>
       <StyledLink href="https://t.me/oleg_gun" target="_blank">
@@ -30,15 +30,6 @@ export const SocialLinks: FC = () => {
       <StyledLink href="https://www.npmjs.com/org/ethberry" target="_blank">
         <StyledLogo component={NpmLogo} viewBox="0 0 30 30" />
       </StyledLink>
-      {/*<StyledLink href="https://www.youtube.com/@gemunion_studio" target="_blank">*/}
-      {/*  <StyledLogo component={YoutubeLogo} viewBox="0 0 30 30" />*/}
-      {/*</StyledLink>*/}
-      {/*<StyledLink href="https://discord.com/invite/FUEyPU82YC" target="_blank">*/}
-      {/*  <StyledLogo component={DiscordLogo} viewBox="0 0 30 30" />*/}
-      {/*</StyledLink>*/}
-      {/*<StyledLink href="https://medium.com/@gemunion" target="_blank">*/}
-      {/*  <StyledLogo component={MediumLogo} viewBox="0 0 30 30" />*/}
-      {/*</StyledLink>*/}
     </StyledWrapper>
   );
 };

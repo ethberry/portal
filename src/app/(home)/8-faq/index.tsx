@@ -31,8 +31,8 @@ export const Faq: FC = () => {
         <StyledAccordion
           disableGutters
           elevation={0}
-          expanded={expanded === "gemunion"}
-          onChange={handleChange("gemunion")}
+          expanded={expanded === "ethberry"}
+          onChange={handleChange("ethberry")}
         >
           <StyledAccordionSummary
             expandIcon={<SvgIcon component={CloseIcon} />}
@@ -51,7 +51,12 @@ export const Faq: FC = () => {
           </StyledAccordionDetails>
         </StyledAccordion>
 
-        <StyledAccordion disableGutters elevation={0} expanded={expanded === "tms"} onChange={handleChange("tms")}>
+        <StyledAccordion
+          disableGutters
+          elevation={0}
+          expanded={expanded === "specialization"}
+          onChange={handleChange("specialization")}
+        >
           <StyledAccordionSummary
             expandIcon={<SvgIcon component={CloseIcon} />}
             aria-controls="panel1-content"
@@ -70,8 +75,8 @@ export const Faq: FC = () => {
         <StyledAccordion
           disableGutters
           elevation={0}
-          expanded={expanded === "mechanics"}
-          onChange={handleChange("mechanics")}
+          expanded={expanded === "process"}
+          onChange={handleChange("process")}
         >
           <StyledAccordionSummary
             expandIcon={<SvgIcon component={CloseIcon} />}
@@ -91,8 +96,8 @@ export const Faq: FC = () => {
         <StyledAccordion
           disableGutters
           elevation={0}
-          expanded={expanded === "mechanics"}
-          onChange={handleChange("mechanics")}
+          expanded={expanded === "confidentiality"}
+          onChange={handleChange("confidentiality")}
         >
           <StyledAccordionSummary
             expandIcon={<SvgIcon component={CloseIcon} />}

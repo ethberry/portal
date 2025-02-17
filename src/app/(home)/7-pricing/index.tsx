@@ -21,9 +21,9 @@ export const Pricing: FC = () => {
         />
       </StyledHeader>
 
-      <StyledCog1 component={Image} alt="Gemunion pricing cog icon" src={MiddleLeftCog} />
-      <StyledCog2 component={Image} alt="Gemunion pricing cog icon" src={TopRightCog} />
-      <StyledCog3 component={Image} alt="Gemunion pricing cog icon" src={BottomRightCog} />
+      <StyledCog1 component={Image} alt="pricing cog icon" src={MiddleLeftCog} />
+      <StyledCog2 component={Image} alt="pricing cog icon" src={TopRightCog} />
+      <StyledCog3 component={Image} alt="pricing cog icon" src={BottomRightCog} />
 
       <ProductTypeSelection />
     </Root>

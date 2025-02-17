@@ -39,7 +39,7 @@ const testimonials = [
     author: "Frank Zehilus",
     position: "CTO @ FitBurn.ai",
     link: "https://www.linkedin.com/in/frank-zehlius-811089133/",
-    text: "Relying on GEMUNION was the right decision. You can tell they know every corner of the industry they’re working in. Their expertise, attention to detail, and commitment to delivering a high-quality product were evident throughout the project. As their client, we appreciated their responsible approach — the end product was delivered by GEMUNION following the deadline, well-timed. \n\n The application exceeded our expectations in both appearance and functionality and gain overwhelmingly positive feedback from the auditors.",
+    text: "Relying on Ethberry was the right decision. You can tell they know every corner of the industry they’re working in. Their expertise, attention to detail, and commitment to delivering a high-quality product were evident throughout the project. As their client, we appreciated their responsible approach — the end product was delivered by GEMUNION following the deadline, well-timed. \n\n The application exceeded our expectations in both appearance and functionality and gain overwhelmingly positive feedback from the auditors.",
   },
   {
     id: 2,

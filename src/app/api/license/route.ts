@@ -43,16 +43,8 @@ export async function POST(req: NextRequest) {
 
   const signature = await account.signMessage({ message: { raw: keccak256(payload) } });
 
-  const headers = new Headers({
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Methods": "POST",
+  return Response.json({
+    signature,
+    nonce,
   });
-
-  return Response.json(
-    {
-      signature,
-      nonce,
-    },
-    { headers },
-  );
 }

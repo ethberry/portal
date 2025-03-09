@@ -8,6 +8,17 @@ const nextConfig: NextConfig = {
     });
     return config;
   },
+  async headers() {
+    return [
+      {
+        source: "/api/license",
+        headers: [
+          { key: "Access-Control-Allow-Origin", value: "*" },
+          { key: "Access-Control-Allow-Methods", value: "POST" },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;

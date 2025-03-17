@@ -149,18 +149,12 @@
       "prompt": "You have unsaved information, are you sure you want to leave this page?"
     },
     "labels": {
-      "achievements": "Achievements",
       "amount": "Amount",
-      "claim": "Claim",
-      "coinGecko": "Coin Gecko",
-      "coinMarketCap": "Coin Market Cap",
       "companyName": "Company name",
       "composition": "Composition",
       "confirm": "Confirm",
       "contract": "Contract",
-      "contractId": "Contract",
       "country": "Country",
-      "craft": "Craft",
       "createdAt": "Created",
       "dateRangeEnd": "To",
       "dateRangeStart": "From",
@@ -169,18 +163,11 @@
       "email": "Email",
       "emails": "Emails",
       "endDate": "End date",
-      "erc1155": "ERC1155",
-      "erc20": "ERC20",
-      "erc721": "ERC721",
-      "erc998": "ERC998",
-      "gambling": "Gambling Mechanics",
       "game": "Game",
-      "gaming": "Gaming Mechanics",
       "gender": "Gender",
       "grade": "Grade",
       "imageUrl": "Avatar",
       "integrations": "Integrations",
-      "ipfs": "IPFS",
       "jobTitle": "Job title",
       "json": "JSON",
       "language": "Language",
@@ -190,34 +177,17 @@
       "other": "Other",
       "pages": "Pages",
       "password": "Password",
-      "paymentSplitter": "Payment splitter",
       "phone": "Phone",
-      "ponzi": "Ponzi",
-      "projectBlockchain": "Blockchain",
-      "projectBudget": "Budget ($1000)",
-      "projectGoal": "Goal",
-      "projectName": "Name",
-      "projectPlatform": "Platform",
-      "projectRevenue": "Revenue",
-      "projectStage": "Stage",
-      "promo": "Promo",
-      "raffle": "Raffle",
-      "rarity": "Rarity",
-      "referralProgram": "Referral program",
-      "rent": "Rent",
       "roles": "Roles",
       "sort": "Sort by",
       "startDate": "Start date",
       "status": "Status",
-      "template": "Template",
       "text": "Your message",
       "title": "Title",
       "token": "Token",
-      "tokenType": "Type",
       "type": "Type",
       "updatedAt": "Updated",
       "users": "Users",
-      "vesting": "Vesting",
       "waitList": "Wait list"
     },
     "placeholders": {
@@ -230,20 +200,12 @@
       "email": "me@google.com",
       "jobTitle": "CEO",
       "maxAmount": "100",
-      "message": "Hi! I wanna request a demo",
       "minAmount": "0.01",
       "name": "Trej Gun",
       "password": "******",
       "phone": "+1 (555) 555-5555",
-      "projectBlockchain": "Binance",
-      "projectGoal": "We're in the process of developing a Play-to-Earn game where users can accumulate tokens by engaging in specific in-game actions.",
-      "projectName": "My awesome project",
-      "projectPlatform": "Website, mobile app for iOS and Android, watch app",
-      "projectRevenue": "We are going to generate revenue by selling in-game items on marketplace",
-      "projectStage": "We've already developed a demo mobile application and are actively seeking investments to further advance our project.",
       "query": "Search...",
       "search": "Search...",
-      "text": "Hi! I wanna request a demo",
       "token": "Token"
     },
     "tips": {
@@ -274,75 +236,6 @@
     "page-not-found": "Page Not Found"
   },
   "pages": {
-    "calculator": {
-      "description": "We glad to offer you our ",
-      "erc1155": {
-        "contract": "Allows to deploy new contracts to use inside the system as semi fungible tokens. Semi fungible tokens can not contain metadata.",
-        "requirements": "Requires NATIVE or ERC20 module to be enabled. It is needed as a currency to set the price",
-        "template": "Allows to configure token parameters (including amount of similar tokens)"
-      },
-      "erc20": {
-        "contract": "Allows to deploy new and attach existing contracts to use inside the system as a payment method. It also includes native token."
-      },
-      "erc721": {
-        "contract": "Allows to deploy new contracts to use inside the system as non fungible tokens. Non fungible tokens can contain metadata such as grade (level, size), coordinates, and rarity.",
-        "requirements": "Requires NATIVE or ERC20 module to be enabled. It is needed as a currency to set the price",
-        "template": "Is a layer of abstraction that allows to configure token parameters (including amount of similar tokens) before actual token is minted.",
-        "token": "Allows to track minted (and burned) tokens, inspect it&apos;s metadata, and related transactions"
-      },
-      "erc998": {
-        "composition": "Defined which tokens could be composed as a child",
-        "contract": "Allows to deploy new contracts to use inside the system as non fungible tokens. Non fungible tokens can contain metadata such as grade (level, size), coordinates, and rarity.",
-        "requirements": "Requires ERC721 token to be enabled. ERC998 is an extension of ERC721 and is build on top of it",
-        "template": "Is a layer of abstraction that allows to configure token parameters (including amount of similar tokens) before actual token is minted.",
-        "token": "Allows to track minted (and burned) tokens, inspect it's metadata, and related transactions"
-      },
-      "integrations": {
-        "coinGecko": "View top cryptocurrency prices live, crypto charts, market cap, and trading volume. Discover today’s new and trending coins, top crypto gainers and losers in the market.",
-        "coinMarketCap": "Top cryptocurrency prices and charts, listed by market capitalization. Free access to current and historic data for Bitcoin and thousands of altcoins.",
-        "ipfs": "Stores token metadata on IPSF (InterPlanetary File System) using service of choice (infura, pinata, web3.storage, nft.storage) service.",
-        "oneInch": "The 1inch Network unites decentralized protocols whose synergy enables the most lucrative, fastest and protected operations in the DeFi space."
-      },
-      "mechanics": {
-        "gambling": {
-          "lottery": "Requires NATIVE or ERC20 and ERC721 token to be enabled. Gambling mechanism based on guessing random numbers.",
-          "ponzi": "Requires NATIVE or ERC20 token to be enabled. Gambling mechanism based on Ponzi scheme.",
-          "raffle": "Requires NATIVE or ERC20 and ERC721 token to be enabled. Gambling mechanism based on random number."
-        },
-        "gaming": {
-          "craft": "Set token craft rules, requires at least ERC1155 module to be enabled.",
-          "dismantle": "Set token dismantle rules, requires at least ERC1155 module to be enabled.",
-          "grade": "Grade mechanic is used for leveling items.",
-          "merge": "Set token merge rules, requires ERC721 or ERC998 module to be enabled.",
-          "rent": "Allows to temporary use items user can't get otherwise."
-        },
-        "marketing": {
-          "claim": "Adds a giveaway functionality that allows users to claim an item issued by the server.",
-          "loot": "Loot boxes are used to randomize content of the box using on-chain randomness.",
-          "mystery": "Mystery boxes are used to add `rarity` parameter to tokens using on-chain randomness.",
-          "staking": "Requires ANY token to be enabled. Bank for tokens. User deposit one type of tokens and after some receives another one as interest.",
-          "vesting": "Allows to create vesting schedule for investors and partners.",
-          "waitList": "Adds a giveaway functionality that allows users to claim an item using merkel proof."
-        },
-        "meta": {
-          "achievements": "Making routine a fun process with additional reward. Requires Claim mechanic",
-          "paymentSplitter": "This financial mechanics is uses exclusively by admins to split their shares of the game revenue.",
-          "promo": "Promo is used to create time limited offer of tokens that is displayed on main page as a banner.",
-          "referralProgram": "Referral program allows user to receive percent from purchases made by his fiends."
-        }
-      },
-      "native": {
-        "contract": "Allows to add native token of the network (ETH, BNB, etc) as payment method."
-      },
-      "other": {
-        "emails": "Integrates one of possible email services for transactional emails. We recommend Mailjet.",
-        "game": "Game integration tools: message broker, balance synchronization, minimal game server with pre-configured modules for debugging or to use as a starting point",
-        "json": "JSON microservice to serve data about your token to 3rd party platforms like OpenSea and Enjinx.",
-        "marketplace": "Marketplace allows users to buy NFTs for COINS. It also acts as a user's wallet where user can see his assets, transaction history and action buttons from enabled mechanics",
-        "users": "Provides user management and authorization flow. One of the following auth providers can be picked up Native, Firebase, Google, Facebook, Cognito."
-      },
-      "title": "Price calculator"
-    },
     "dashboard": {
       "sections": {
         "careers": "Careers",
@@ -401,13 +294,15 @@
           "showcases": "Showcases"
         },
         "title": {
-          "animated1": "new sales bot",
+          "animated1": "new telegram bot",
           "animated10": "new mobile app",
-          "animated2": "new blockchain game",
-          "animated3": "new card game",
+          "animated12": "new launchpad",
+          "animated11": "new RAG service",
+          "animated2": "new telegram app",
+          "animated3": "new MCP server",
           "animated4": "new P2E game",
           "animated5": "new DAPP",
-          "animated6": "new launchpad",
+          "animated6": "new conversational AI",
           "animated7": "new staking platform",
           "animated8": "new AI assistant",
           "animated9": "new meme coin",
@@ -419,12 +314,6 @@
         "title": "See EthBerry in action"
       },
       "nfts": {
-        "items": {
-          "item1": "5 token types",
-          "item2": "20+ common blockchain mechanics",
-          "item3": "10+ integrations with popular services",
-          "item4": "Supports all EVM blockchains"
-        },
         "megaTitle": "WITH US",
         "title": "Start building"
       },
@@ -433,24 +322,6 @@
       },
       "pricing": {
         "description": "Start your next project <b>the proper way</b>"
-      },
-      "requestDemo": {
-        "button": "Send request",
-        "description": "Experience a live customized demo, get answers to your specific questions, and find out why EthBerry is the right choice for your startup",
-        "p1": "A brief conversation to discuss your ideas, reporting needs, and how your startup uses blockchain",
-        "p2": "Live demonstration of our Enterprise platform, tailored to the way you work",
-        "p3": "All your questions answered to make sure you have all the information you need",
-        "p4": "No commitment whatsoever",
-        "title": "Request a demo",
-        "whatExpect": "What can I expect?"
-      },
-      "requestQuotation": {
-        "button": "Send request",
-        "description": "Share your specific software requirements with us, and unlock the power of tailored solutions that align perfectly with your business needs. Our team of expert software developers will craft a customized solution to bring your vision to life.",
-        "p1": "Fill out the module selection form with your requirements and preferences for your new P2E project.",
-        "p2": "Confidentiality share your project idea with us for a thorough evaluation of how it aligns with our software solutions.",
-        "p3": "Evaluate the received quotations, considering expertise, cost, timeline, and choose the most suitable option.",
-        "title": "Request a quotation"
       },
       "subscribe": {
         "title": "<b>Subscribe</b> for newsletters"
@@ -479,31 +350,12 @@
       "description": "The purpose of this page is to provide the visual styles of Ethberry and ensure that they are used consistently",
       "title": "Press kit"
     },
-    "pricing": {
-      "description": "We glad to offer you our products",
-      "title": "Price calculator"
-    },
-    "productType": {
-      "description": "Rate plans",
-      "dialog": {
-        "text": "Not all our features available for launchpad. If you see this dialog it may be the time to upgrade to self-hosted version.",
-        "title": "Time to upgrade!"
-      },
-      "title": "Product types"
-    },
     "profile": {
       "tabs": {
         "general": "General",
         "subscriptions": "Subscriptions"
       },
       "title": "Profile"
-    },
-    "ratePlan": {
-      "description": "Our SaaS platform is FREE OF CHARGE",
-      "title": "Rate plans"
-    },
-    "survey": {
-      "title": "Survey"
     },
     "tech": {
       "description": "This is what we use under the hood",

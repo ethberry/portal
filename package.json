@@ -27,7 +27,7 @@
     "react-intl": "7.1.6",
     "react-slick": "0.30.3",
     "slick-carousel": "1.8.1",
-    "supabase": "2.19.7",
+    "supabase": "2.2.1",
     "typewriter-effect": "2.21.0",
     "viem": "2.23.11",
     "wagmi": "2.14.13",
@@ -45,6 +45,7 @@
     "lint-staged": "15.5.0",
     "postcss": "8.5.3",
     "prettier": "3.5.3",
+    "supabase": "2.19.7",
     "typescript": "5.8.2"
   },
   "engines": {

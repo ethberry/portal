@@ -39,7 +39,7 @@ const testimonials = [
     author: "Frank Zehilus",
     position: "CTO @ FitBurn.ai",
     link: "https://www.linkedin.com/in/frank-zehlius-811089133/",
-    text: "Relying on Ethberry was the right decision. You can tell they know every corner of the industry they’re working in. Their expertise, attention to detail, and commitment to delivering a high-quality product were evident throughout the project. As their client, we appreciated their responsible approach — the end product was delivered by GEMUNION following the deadline, well-timed. \n\n The application exceeded our expectations in both appearance and functionality and gain overwhelmingly positive feedback from the auditors.",
+    text: "Relying on Ethberry was the right decision. You can tell they know every corner of the industry they’re working in. Their expertise, attention to detail, and commitment to delivering a high-quality product were evident throughout the project. As their client, we appreciated their responsible approach — the end product was delivered by EthBerry following the deadline, well-timed. \n\n The application exceeded our expectations in both appearance and functionality and gain overwhelmingly positive feedback from the auditors.",
   },
   {
     id: 2,
@@ -64,6 +64,30 @@ const testimonials = [
     position: "Director of Software Engineering @ Unicsoft",
     link: "https://www.linkedin.com/in/olga-kotlamina-ba1b9a17/",
     text: "Oleg's expertise as a Solution Architect at Unicsoft was truly remarkable. His role in presales was invaluable, adeptly gathering technical requirements and producing SRS documentation for over 100 projects. Oleg's ability to develop initial technical visions was exceptional, covering a wide range of projects from designing NFT stores to complex blockchain initiatives like exchanges, cross-chain bridges, and gamified projects. His contributions consistently exceeded expectations, showcasing his proficiency and dedication in every endeavor.",
+  },
+  {
+    id: 4,
+    avatar: "/landing/testimonials/yura.png",
+    author: "Yury Toporov",
+    position: "CFO @ Gemunion",
+    link: "https://www.linkedin.com/in/yury-toporov",
+    text: "I had the pleasure of working with Oleg for four years, and I am truly regretful that this project has come to an end. Oleg is an exceptional technical leader who consistently demonstrated a keen eye for detail and a deep understanding of our technological needs. His ability to lead by example inspired the entire team, driving us to achieve remarkable results. Oleg's dedication and expertise were instrumental in our success, and I am confident that he will continue to excel in any future endeavors.",
+  },
+  {
+    id: 4,
+    avatar: "/landing/testimonials/dima.png",
+    author: "Dimitri Sloboda",
+    position: "Founder and CEO @ CoArt",
+    link: "https://www.linkedin.com/in/olga-kotlamina-ba1b9a17/",
+    text: "Oleg manages the technical team for our project so exceptionally well that we would be thrilled to see him as a co-founder in the next phase of scaling our project. His expertise, leadership, and ability to deliver results make him an invaluable asset to any team",
+  },
+  {
+    id: 4,
+    avatar: "/landing/testimonials/stan.png",
+    author: "Stanislav Kondratov",
+    position: "CEO @ TheLAMB",
+    link: "#",
+    text: "I want to express my heartfelt gratitude for the incredible work you've done in developing our blockchain protocol. Your team's expertise and dedication have been nothing short of outstanding. The effort you've put into this project has not only met but surpassed our expectations, and it's clear that your innovative approach has set a strong foundation for our platform's success.",
   },
 ];
 

@@ -1,4 +1,4 @@
-import { Box, Grid2, Link, SvgIcon, Typography } from "@mui/material";
+import { Box, Grid, Link, SvgIcon, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 export const Root = styled(Box)(({ theme }) => ({
@@ -56,21 +56,21 @@ export const StyledLinksColumnHeader = styled(Typography)(({ theme }) => ({
   opacity: 0.4,
 }));
 
-export const StyledFooterTop = styled(Grid2)(({ theme }) => ({
+export const StyledFooterTop = styled(Grid)(({ theme }) => ({
   marginBottom: theme.spacing(9),
   [theme.breakpoints.down("lg")]: {
     marginBottom: theme.spacing(4),
   },
 }));
 
-export const StyledLogoWrapper = styled(Grid2)(({ theme }) => ({
+export const StyledLogoWrapper = styled(Grid)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "flex-start",
   [theme.breakpoints.down("md")]: {},
 }));
 
-export const StyledCopyrightWrapper = styled(Grid2)(({ theme }) => ({
+export const StyledCopyrightWrapper = styled(Grid)(({ theme }) => ({
   ...theme.typography.caption,
   display: "flex",
   alignItems: "center",

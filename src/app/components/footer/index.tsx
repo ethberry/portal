@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import { Grid2 } from "@mui/material";
+import { Grid } from "@mui/material";
 
 import Logo from "./logo_text.svg";
 import { Subscribe } from "./subscribe";
@@ -31,7 +31,7 @@ export const Footer: FC = () => {
             <StyledLogoWrapper size={{ xs: 12, md: 4.5 }}>
               <StyledLogo component={Logo} viewBox="0 0 500 100" />
             </StyledLogoWrapper>
-            <Grid2 size={{ xs: 12, md: 7.5 }} sx={{ display: "flex", gap: 4, justifyContent: "flex-start" }}>
+            <Grid size={{ xs: 12, md: 7.5 }} sx={{ display: "flex", gap: 4, justifyContent: "flex-start" }}>
               <StyledLinksColumnWrapper>
                 <StyledLinksColumnWrapper>
                   <StyledText>EthBerry LTD</StyledText>
@@ -43,13 +43,13 @@ export const Footer: FC = () => {
                   Nakashidze Street, N1, Office N3, Building N3
                 </StyledLinksColumnHeader>
               </StyledLinksColumnWrapper>
-            </Grid2>
+            </Grid>
           </StyledFooterTop>
-          <Grid2 container spacing={4}>
-            <Grid2 size={{ xs: 12, sm: 112, md: 4.5 }} sx={{ display: "flex", justifyContent: "flex-start" }}>
+          <Grid container spacing={4}>
+            <Grid size={{ xs: 12, sm: 112, md: 4.5 }} sx={{ display: "flex", justifyContent: "flex-start" }}>
               <Subscribe />
-            </Grid2>
-            <Grid2 size={{ xs: 6, sm: 6, md: 2.5 }} sx={{ display: "flex", justifyContent: "flex-start" }}>
+            </Grid>
+            <Grid size={{ xs: 6, sm: 6, md: 2.5 }} sx={{ display: "flex", justifyContent: "flex-start" }}>
               <StyledLinksColumnWrapper>
                 <StyledLinksColumnHeader>Powered by</StyledLinksColumnHeader>
                 <StyledLink href="https://nestjs.com" target="_blank" rel="noopener noreferrer">
@@ -65,15 +65,15 @@ export const Footer: FC = () => {
                   Vercel
                 </StyledLink>
               </StyledLinksColumnWrapper>
-            </Grid2>
-            <Grid2 size={{ xs: 6, md: 2.5 }} sx={{ display: "flex", justifyContent: "flex-start" }}>
+            </Grid>
+            <Grid size={{ xs: 6, md: 2.5 }} sx={{ display: "flex", justifyContent: "flex-start" }}>
               <ResourcesColumn />
-            </Grid2>
-            <Grid2 size={{ xs: 6, sm: 6, md: 2.5 }} sx={{ display: "flex", justifyContent: "flex-start" }}>
+            </Grid>
+            <Grid size={{ xs: 6, sm: 6, md: 2.5 }} sx={{ display: "flex", justifyContent: "flex-start" }}>
               <CompanyColumn />
-            </Grid2>
-          </Grid2>
-          <Grid2 container sx={{ mt: 6 }}>
+            </Grid>
+          </Grid>
+          <Grid container sx={{ mt: 6 }}>
             <StyledCopyrightWrapper size={{ xs: 12, md: 3 }} sx={{ justifyContent: "flex-start" }}>
               <StyledLink href={"tel://+955568797178"}>+955 (568) 79-71-78</StyledLink>
             </StyledCopyrightWrapper>
@@ -83,7 +83,7 @@ export const Footer: FC = () => {
             <StyledCopyrightWrapper size={{ xs: 12, md: 3 }} sx={{ textAlign: "right" }}>
               ©{new Date().getFullYear()} EthBerry. All Rights Reserved
             </StyledCopyrightWrapper>
-          </Grid2>
+          </Grid>
         </StyledContent>
       </StyledWrapper>
     </Root>

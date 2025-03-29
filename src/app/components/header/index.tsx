@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import { Grid2, useScrollTrigger } from "@mui/material";
+import { Grid, useScrollTrigger } from "@mui/material";
 import Link from "next/link";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
@@ -19,8 +19,8 @@ export const Header: FC = () => {
   return (
     <StyledAppBar position="fixed" elevation={scrolled ? 1 : 0}>
       <StyledToolbar scrolled={scrolled}>
-        <Grid2 container style={{ width: "100%" }}>
-          <Grid2 size={{ xs: 12, md: 5 }} justifyContent="space-between" sx={{ display: "flex", alignItems: "center" }}>
+        <Grid container style={{ width: "100%" }}>
+          <Grid size={{ xs: 12, md: 5 }} justifyContent="space-between" sx={{ display: "flex", alignItems: "center" }}>
             <Menu />
 
             <StyledLink component={Link} href="/" sx={{ display: { xs: "flex", md: "none" } }}>
@@ -30,8 +30,8 @@ export const Header: FC = () => {
             </StyledLink>
 
             <MobileMenu />
-          </Grid2>
-          <Grid2
+          </Grid>
+          <Grid
             size={{ xs: 12, md: 3.5 }}
             justifyContent="flex-start"
             sx={{ display: { xs: "none", md: "flex" }, alignItems: "center" }}
@@ -41,8 +41,8 @@ export const Header: FC = () => {
                 <Logo />
               </StyledLogo>
             </StyledLink>
-          </Grid2>
-          <Grid2
+          </Grid>
+          <Grid
             size={{ xs: 12, md: 3.5 }}
             justifyContent="flex-end"
             sx={{ display: { xs: "none", md: "flex" }, alignItems: "center" }}
@@ -50,8 +50,8 @@ export const Header: FC = () => {
             {/*<Localization languages={Object.values(EnabledLanguages)} />*/}
             <ConnectButton />
             {/*<Sections />*/}
-          </Grid2>
-        </Grid2>
+          </Grid>
+        </Grid>
       </StyledToolbar>
     </StyledAppBar>
   );

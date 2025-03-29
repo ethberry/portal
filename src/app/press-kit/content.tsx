@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import { Button, Card, CardActions, CardMedia, Grid2, Typography, useTheme } from "@mui/material";
+import { Button, Card, CardActions, CardMedia, Grid, Typography, useTheme } from "@mui/material";
 import { FormattedMessage } from "react-intl";
 
 import { Root } from "../components/common/styled";
@@ -11,7 +11,7 @@ export const PressKitContent: FC = () => {
 
   return (
     <Root>
-      <Grid2>
+      <Grid>
         <Typography
           component="h2"
           sx={[
@@ -28,8 +28,8 @@ export const PressKitContent: FC = () => {
           <FormattedMessage id="pages.pressKit.description" />
         </Typography>
 
-        <Grid2 container spacing={2} sx={{ mb: 1 }}>
-          <Grid2 size={{ xs: 12, sm: 6 }}>
+        <Grid container spacing={2} sx={{ mb: 1 }}>
+          <Grid size={{ xs: 12, sm: 6 }}>
             <Card>
               <CardMedia component="img" image="/press-kit/logo.png" title="logo" sx={{ p: 2 }} />
               <CardActions>
@@ -41,8 +41,8 @@ export const PressKitContent: FC = () => {
                 </Button>
               </CardActions>
             </Card>
-          </Grid2>
-          <Grid2 size={{ xs: 12, sm: 6 }}>
+          </Grid>
+          <Grid size={{ xs: 12, sm: 6 }}>
             <Card>
               <CardMedia
                 component="img"
@@ -59,8 +59,8 @@ export const PressKitContent: FC = () => {
                 </Button>
               </CardActions>
             </Card>
-          </Grid2>
-          <Grid2 size={{ xs: 12, sm: 6 }}>
+          </Grid>
+          <Grid size={{ xs: 12, sm: 6 }}>
             <Card>
               <CardMedia component="img" image="/press-kit/logo_text.png" title="logo" sx={{ p: 2 }} />
               <CardActions>
@@ -72,8 +72,8 @@ export const PressKitContent: FC = () => {
                 </Button>
               </CardActions>
             </Card>
-          </Grid2>
-          <Grid2 size={{ xs: 12, sm: 6 }}>
+          </Grid>
+          <Grid size={{ xs: 12, sm: 6 }}>
             <Card>
               <CardMedia
                 component="img"
@@ -90,9 +90,9 @@ export const PressKitContent: FC = () => {
                 </Button>
               </CardActions>
             </Card>
-          </Grid2>
-        </Grid2>
-      </Grid2>
+          </Grid>
+        </Grid>
+      </Grid>
     </Root>
   );
 };

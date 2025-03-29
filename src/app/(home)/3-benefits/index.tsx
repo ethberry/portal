@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import { Grid2 } from "@mui/material";
+import { Grid } from "@mui/material";
 import { FormattedMessage } from "react-intl";
 
 import { StyledBold } from "../../components/common/styled";
@@ -12,7 +12,7 @@ import {
   StyledBenefitTitle,
   StyledCupImage,
   StyledContent,
-  StyledGrid2,
+  StyledGrid,
   StyledHeader,
   StyledConfettiImage,
   StyledImageWrapper,
@@ -30,9 +30,9 @@ export const Benefits: FC = () => {
             }}
           />
         </StyledHeader>
-        <StyledGrid2 container spacing={1}>
+        <StyledGrid container spacing={1}>
           {[1, 2, 3, 4, 5, 6].map(benefit => (
-            <Grid2 key={benefit} size={{ xs: 12, sm: 6, lg: 4 }}>
+            <Grid key={benefit} size={{ xs: 12, sm: 6, lg: 4 }}>
               <StyledBenefit>
                 <StyledBenefitTitle>0{benefit}</StyledBenefitTitle>
                 <StyledBenefitDescription>
@@ -42,9 +42,9 @@ export const Benefits: FC = () => {
                   />
                 </StyledBenefitDescription>
               </StyledBenefit>
-            </Grid2>
+            </Grid>
           ))}
-        </StyledGrid2>
+        </StyledGrid>
       </StyledContent>
       <StyledImageWrapper>
         <StyledCupImage component="img" src="/landing/benefits/benefits-cup.png" alt="" />

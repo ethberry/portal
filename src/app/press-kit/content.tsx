@@ -1,9 +1,9 @@
 "use client";
 
 import { FC } from "react";
-
 import { Button, Card, CardActions, CardMedia, Grid2, Typography, useTheme } from "@mui/material";
 import { FormattedMessage } from "react-intl";
+
 import { Root } from "../components/common/styled";
 
 export const PressKitContent: FC = () => {

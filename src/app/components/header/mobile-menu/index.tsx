@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
 import { Box, IconButton, MenuList, SwipeableDrawer } from "@mui/material";
 import { Menu as MenuIcon } from "@mui/icons-material";
+
 import { Localization } from "@ethberry/provider-localization";
 
 import { EnabledLanguages } from "../../../i18n";

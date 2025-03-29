@@ -9,16 +9,16 @@ const nextConfig: NextConfig = {
     return config;
   },
   async headers() {
-    return [
+    return Promise.resolve([
       {
         source: "/api/license",
         headers: [
           { key: "Access-Control-Allow-Origin", value: "*" },
           { key: "Access-Control-Allow-Methods", value: "POST" },
-          { key: "Access-Control-Allow-Headers", value: "Accept, Content-Type" }
+          { key: "Access-Control-Allow-Headers", value: "Accept, Content-Type" },
         ],
       },
-    ];
+    ]);
   },
 };
 

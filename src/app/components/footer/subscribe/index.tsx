@@ -6,7 +6,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 
 import { StyledBold } from "../../common/styled";
-
 import { Root, StyledButton, StyledEmailWrapper, StyledForm, StyledHeader, StyledSubmitWrapper } from "./styled";
 
 interface ISubscriptionCreateDto {

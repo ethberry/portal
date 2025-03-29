@@ -5,10 +5,11 @@ import { PropsWithChildren } from "react";
 import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { WagmiProvider } from "wagmi";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
-import { LocalizationProvider, localizationSlice } from "@ethberry/provider-localization";
-import { createStore, ReduxProvider } from "@ethberry/redux";
 import { ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
+
+import { LocalizationProvider, localizationSlice } from "@ethberry/provider-localization";
+import { createStore, ReduxProvider } from "@ethberry/redux";
 
 import { config } from "../wagmi.config";
 import { theme } from "../theme";

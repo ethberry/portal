@@ -1,5 +1,5 @@
 import { PressKitContent } from "./content";
 
-export default async function PressKit() {
+export default function PressKit() {
   return <PressKitContent />;
 }

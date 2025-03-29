@@ -5,9 +5,9 @@ import { Box } from "@mui/material";
 import { FormattedMessage, useIntl } from "react-intl";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
+
 import Logo from "./images/logo.png";
 import Clouds from "./images/clouds.png";
-
 import { StyledBold } from "../../components/common/styled";
 import {
   Root,

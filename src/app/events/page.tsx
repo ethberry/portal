@@ -1,5 +1,5 @@
 import { EventsContent } from "./content";
 
-export default async function Events() {
+export default function Events() {
   return <EventsContent />;
 }

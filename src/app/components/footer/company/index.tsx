@@ -1,6 +1,5 @@
 import { FC } from "react";
-import { FormattedMessage } from "react-intl";
-import { useIntl } from "react-intl";
+import { FormattedMessage, useIntl } from "react-intl";
 import Link from "next/link";
 
 import { StyledLink, StyledLinksColumnHeader, StyledLinksColumnWrapper } from "../styled";
@@ -43,7 +42,7 @@ export const CompanyColumn: FC = () => {
       </StyledLinksColumnHeader>
       {items.map(item => {
         return (
-          <StyledLink key={item.id} component={Link} href={item.link!}>
+          <StyledLink key={item.id} component={Link} href={item.link}>
             {item.title}
           </StyledLink>
         );

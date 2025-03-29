@@ -3,11 +3,11 @@
 import { FC } from "react";
 import { Typography, Paper, Box } from "@mui/material";
 import Image from "next/image";
+import { FormattedMessage } from "react-intl";
 
 import { Root } from "../components/common/styled";
 import FitBurn from "./FB138.jpeg";
 import THUB from "./Т-HUB 71.jpg";
-import { FormattedMessage } from "react-intl";
 
 export const EventsContent: FC = () => {
   return (

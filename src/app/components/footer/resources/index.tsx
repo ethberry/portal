@@ -36,7 +36,7 @@ export const ResourcesColumn: FC = () => {
       </StyledLinksColumnHeader>
       {items.map(resource => {
         return (
-          <StyledLink key={resource.id} component={Link} href={resource.link!}>
+          <StyledLink key={resource.id} component={Link} href={resource.link}>
             {resource.title}
           </StyledLink>
         );

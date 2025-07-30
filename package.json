@@ -34,7 +34,7 @@
     "zod": "3.25.76"
   },
   "devDependencies": {
-    "@ethberry/eslint-config": "5.0.6",
+    "@ethberry/eslint-config": "5.0.8",
     "@svgr/webpack": "8.1.0",
     "@types/node": "22.16.5",
     "@types/react": "19.1.8",

@@ -41,7 +41,7 @@
     "@types/react-dom": "19.1.9",
     "@types/react-slick": "0.23.13",
     "husky": "9.1.7",
-    "lint-staged": "15.5.2",
+    "lint-staged": "16.2.3",
     "postcss": "8.5.6",
     "prettier": "3.6.2",
     "supabase": "2.47.2",

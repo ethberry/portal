@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { FormattedMessage, useIntl } from "react-intl";
 import { TextField } from "@mui/material";
-import { SubmitHandler, useForm } from "react-hook-form";
+import { SubmitHandler, useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 
@@ -13,18 +13,21 @@ interface ISubscriptionCreateDto {
 }
 
 const schema = z.object({
-  email: z.string().email({ message: "Pattern mismatch" }),
+  email: z.email({ message: "Pattern mismatch" }).or(z.literal("")),
 });
 
 export const Subscribe: FC = () => {
   const { formatMessage } = useIntl();
 
   const {
-    register,
     handleSubmit,
-    formState: { errors, isDirty, isSubmitting, isValid },
+    formState: { errors, isDirty, isSubmitting },
+    control
   } = useForm<ISubscriptionCreateDto>({
     resolver: zodResolver(schema),
+    defaultValues: {
+      email: ""
+    }
   });
 
   const onSubmit: SubmitHandler<ISubscriptionCreateDto> = async data => {
@@ -46,13 +49,19 @@ export const Subscribe: FC = () => {
       </StyledHeader>
       <StyledForm component="form" onSubmit={handleSubmit(onSubmit)}>
         <StyledEmailWrapper sx={{ xs: 12, sm: 6 }}>
-          <TextField
-            defaultValue=""
-            label=""
-            {...register("email")}
-            error={!!errors.email}
-            helperText={errors.email?.message}
-            sx={{ width: "100%" }}
+          <Controller
+            name="email"
+            control={control}
+            render={({ field: { onChange, value } }) => (
+              <TextField
+                value={value}
+                onChange={onChange}
+                label=""
+                error={!!errors.email}
+                helperText={errors.email?.message}
+                sx={{ width: "100%" }}
+              />
+            )}
           />
         </StyledEmailWrapper>
         <StyledSubmitWrapper sx={{ xs: 12, sm: 6 }}>
@@ -61,7 +70,7 @@ export const Subscribe: FC = () => {
             size="large"
             type="submit"
             color="primary"
-            disabled={isSubmitting || !(isValid && isDirty)}
+            disabled={isSubmitting || !isDirty}
             sx={{ width: "100%" }}
           >
             <FormattedMessage id="form.buttons.submit" />

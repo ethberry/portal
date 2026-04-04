@@ -8,9 +8,9 @@
     "@emotion/cache": "11.14.0",
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.1",
-    "@ethberry/provider-localization": "7.1.21",
-    "@ethberry/provider-theme": "10.1.21",
-    "@ethberry/redux": "1.0.27",
+    "@ethberry/provider-localization": "7.1.22",
+    "@ethberry/provider-theme": "10.1.22",
+    "@ethberry/redux": "1.0.28",
     "@hookform/resolvers": "5.2.2",
     "@mui/icons-material": "7.3.9",
     "@mui/material": "7.3.9",
@@ -35,7 +35,7 @@
     "zod": "4.3.6"
   },
   "devDependencies": {
-    "@ethberry/eslint-config": "5.0.9",
+    "@ethberry/eslint-config": "5.0.11",
     "@svgr/webpack": "8.1.0",
     "@types/node": "22.19.17",
     "@types/react": "19.2.14",

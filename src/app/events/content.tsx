@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import { Typography, Paper, Box } from "@mui/material";
+import { Typography, Paper } from "@mui/material";
 import Image from "next/image";
 import { FormattedMessage } from "react-intl";
 
@@ -27,13 +27,13 @@ export const EventsContent: FC = () => {
         <Typography variant="h5" sx={{ mb: 2 }}>
           FitBurn on FIBO
         </Typography>
-        <Box component={Image} src={FitBurn} alt="FitBurn" width="100%" height="auto" />
+        <Image src={FitBurn} alt="FitBurn" style={{ width: "100%", height: "auto" }} />
       </Paper>
       <Paper sx={{ p: 2, mb: 2 }}>
         <Typography variant="h5" sx={{ mb: 2 }}>
           Product Review Meetup at T-HUB
         </Typography>
-        <Box component={Image} src={THUB} alt="T-HUB" width="100%" height="auto" />
+        <Image src={THUB} alt="T-HUB" style={{ width: "100%", height: "auto" }} />
       </Paper>
       <Paper sx={{ p: 2, mb: 2 }}>
         <Typography variant="h5" sx={{ mb: 2 }}>

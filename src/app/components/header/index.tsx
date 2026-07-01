@@ -20,7 +20,10 @@ export const Header: FC = () => {
     <StyledAppBar position="fixed" elevation={scrolled ? 1 : 0}>
       <StyledToolbar scrolled={scrolled}>
         <Grid container style={{ width: "100%" }}>
-          <Grid size={{ xs: 12, md: 5 }} justifyContent="space-between" sx={{ display: "flex", alignItems: "center" }}>
+          <Grid
+            size={{ xs: 12, md: 5 }}
+            sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}
+          >
             <Menu />
 
             <StyledLink component={Link} href="/" sx={{ display: { xs: "flex", md: "none" } }}>
@@ -33,8 +36,7 @@ export const Header: FC = () => {
           </Grid>
           <Grid
             size={{ xs: 12, md: 3.5 }}
-            justifyContent="flex-start"
-            sx={{ display: { xs: "none", md: "flex" }, alignItems: "center" }}
+            sx={{ display: { xs: "none", md: "flex" }, alignItems: "center", justifyContent: "flex-start" }}
           >
             <StyledLink component={Link} href="/">
               <StyledLogo scrolled={scrolled} viewBox="0 0 500 100">
@@ -44,8 +46,7 @@ export const Header: FC = () => {
           </Grid>
           <Grid
             size={{ xs: 12, md: 3.5 }}
-            justifyContent="flex-end"
-            sx={{ display: { xs: "none", md: "flex" }, alignItems: "center" }}
+            sx={{ display: { xs: "none", md: "flex" }, alignItems: "center", justifyContent: "flex-end" }}
           >
             {/*<Localization languages={Object.values(EnabledLanguages)} />*/}
             <ConnectButton />

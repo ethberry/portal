@@ -32,7 +32,9 @@ export const DropdownMenuItem: FC<IDropdownMenuItemProps> = props => {
         </MuiMenuItem>
       </StyledAccordionSummary>
       <StyledAccordionDetails>
-        {menuItem.children?.map(item => <MenuItem key={item.title} menuItem={item} onClose={onClose} />)}
+        {menuItem.children?.map(item => (
+          <MenuItem key={item.title} menuItem={item} onClose={onClose} />
+        ))}
       </StyledAccordionDetails>
     </StyledAccordion>
   );

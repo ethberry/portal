@@ -22,12 +22,12 @@ export const Subscribe: FC = () => {
   const {
     handleSubmit,
     formState: { errors, isDirty, isSubmitting },
-    control
+    control,
   } = useForm<ISubscriptionCreateDto>({
     resolver: zodResolver(schema),
     defaultValues: {
-      email: ""
-    }
+      email: "",
+    },
   });
 
   const onSubmit: SubmitHandler<ISubscriptionCreateDto> = async data => {

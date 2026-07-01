@@ -19,7 +19,7 @@ export const ProductTypeSelection: FC<IProductTypeSelectionProps> = () => {
   const productTypes = useProductTypes();
 
   return (
-    <StyledCardsWrapper container justifyContent="center">
+    <StyledCardsWrapper container sx={{ justifyContent: "center" }}>
       {productTypes.map((type, index) => (
         <StyledCardWrapper size={{ xs: 12, sm: 12, md: 6, lg: 4 }} key={index}>
           {type.icons.map(icon => (

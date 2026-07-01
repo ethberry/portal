@@ -50,17 +50,19 @@ export const DropdownMenuItem: FC<IDropdownMenuItemProps> = props => {
           horizontal: "left",
         }}
         elevation={1}
-        TransitionComponent={Fade}
-        MenuListProps={{
-          "aria-labelledby": "basic-button",
-          onMouseLeave: handleClose,
-          disablePadding: true,
-        }}
-        PaperProps={{
-          sx: {
-            borderRadius: 2,
-            padding: 1,
-            border: "1px solid #ebebeb",
+        slots={{ transition: Fade }}
+        slotProps={{
+          list: {
+            "aria-labelledby": "basic-button",
+            onMouseLeave: handleClose,
+            disablePadding: true,
+          },
+          paper: {
+            sx: {
+              borderRadius: 2,
+              padding: 1,
+              border: "1px solid #ebebeb",
+            },
           },
         }}
       >

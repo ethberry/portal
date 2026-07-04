@@ -30,7 +30,7 @@
     "slick-carousel": "1.8.1",
     "supabase": "2.109.0",
     "typewriter-effect": "2.22.0",
-    "viem": "2.54.1",
+    "viem": "2.54.2",
     "wagmi": "3.6.21",
     "zod": "4.4.3"
   },

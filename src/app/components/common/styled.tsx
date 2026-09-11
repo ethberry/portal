@@ -4,14 +4,14 @@ import { Box, BoxProps } from "@mui/material";
 export const Root = styled(Box)(({ theme }) => ({
   width: "100%",
   marginTop: theme.spacing(6),
-  padding: theme.spacing(1, 4, 4),
+  padding: theme.spacing(4, 4, 4),
   borderRadius: theme.spacing(2),
   backgroundColor: theme.palette.background.paper,
   "& label > span": {
     fontWeight: 600,
   },
   [theme.breakpoints.down("md")]: {
-    padding: theme.spacing(1, 2, 3),
+    padding: theme.spacing(4, 2, 3),
   },
 }));
 

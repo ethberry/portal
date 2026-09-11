@@ -7,6 +7,7 @@ import { WagmiProvider } from "wagmi";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import { ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
+import { SnackbarProvider } from "notistack";
 
 import { LocalizationProvider, localizationSlice } from "@ethberry/provider-localization";
 import { createStore, ReduxProvider } from "@ethberry/redux";
@@ -26,7 +27,9 @@ export default function Providers({ children }: PropsWithChildren) {
               <ThemeProvider theme={theme}>
                 <CssBaseline />
                 <LocalizationProvider i18n={i18n} defaultLanguage={EnabledLanguages.EN}>
-                  {children}
+                  <SnackbarProvider maxSnack={3} autoHideDuration={6000}>
+                    {children}
+                  </SnackbarProvider>
                 </LocalizationProvider>
               </ThemeProvider>
             </AppRouterCacheProvider>

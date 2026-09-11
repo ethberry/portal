@@ -10,8 +10,8 @@ export const CompanyColumn: FC = () => {
   const ourTeam = formatMessage({ id: "components.header.menu.ourTeam" });
   const locations = formatMessage({ id: "components.header.menu.locations" });
   const careers = formatMessage({ id: "components.header.menu.careers" });
+  const contact = formatMessage({ id: "components.header.menu.contact" });
   const technicalStack = formatMessage({ id: "components.header.menu.technicalStack" });
-  const partnership = formatMessage({ id: "components.header.menu.partnership" });
   const pressKit = formatMessage({ id: "components.header.menu.pressKit" });
 
   const items = [
@@ -37,8 +37,8 @@ export const CompanyColumn: FC = () => {
     },
     {
       id: 53,
-      link: "/contact/partnership",
-      title: partnership,
+      link: "/contact",
+      title: contact,
     },
     {
       id: 54,

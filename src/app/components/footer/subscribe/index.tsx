@@ -1,42 +1,50 @@
 import { FC } from "react";
-import { FormattedMessage, useIntl } from "react-intl";
 import { TextField } from "@mui/material";
+import { FormattedMessage, useIntl } from "react-intl";
 import { SubmitHandler, useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
+import { useSnackbar } from "notistack";
 
 import { StyledBold } from "../../common/styled";
+import { subscribeSchema, SubscribeFormValues } from "./schema";
 import { Root, StyledButton, StyledEmailWrapper, StyledForm, StyledHeader, StyledSubmitWrapper } from "./styled";
 
-interface ISubscriptionCreateDto {
-  email: string;
-}
-
-const schema = z.object({
-  email: z.email({ message: "Pattern mismatch" }).or(z.literal("")),
-});
+const defaultValues: SubscribeFormValues = {
+  email: "",
+};
 
 export const Subscribe: FC = () => {
   const { formatMessage } = useIntl();
-
+  const { enqueueSnackbar } = useSnackbar();
   const {
     handleSubmit,
     formState: { errors, isDirty, isSubmitting },
     control,
-  } = useForm<ISubscriptionCreateDto>({
-    resolver: zodResolver(schema),
-    defaultValues: {
-      email: "",
-    },
+    reset,
+  } = useForm<SubscribeFormValues>({
+    resolver: zodResolver(subscribeSchema),
+    defaultValues,
   });
 
-  const onSubmit: SubmitHandler<ISubscriptionCreateDto> = async data => {
-    return fetch("/api/subscribe", {
-      method: "POST",
-      body: JSON.stringify(data),
-    }).then(() => {
-      alert(formatMessage({ id: "snackbar.subscriptionSuccess" }));
-    });
+  const onSubmit: SubmitHandler<SubscribeFormValues> = async data => {
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Subscription request failed");
+      }
+
+      reset(defaultValues);
+      enqueueSnackbar(formatMessage({ id: "snackbar.subscriptionSuccess" }), { variant: "success" });
+    } catch {
+      enqueueSnackbar(formatMessage({ id: "snackbar.subscriptionError" }), { variant: "error" });
+    }
   };
 
   return (
@@ -47,7 +55,7 @@ export const Subscribe: FC = () => {
           values={{ b: chunks => <StyledBold key={"a"}>{chunks}</StyledBold> }}
         />
       </StyledHeader>
-      <StyledForm component="form" onSubmit={handleSubmit(onSubmit)}>
+      <StyledForm component="form" noValidate onSubmit={handleSubmit(onSubmit)}>
         <StyledEmailWrapper sx={{ xs: 12, sm: 6 }}>
           <Controller
             name="email"
@@ -56,10 +64,14 @@ export const Subscribe: FC = () => {
               <TextField
                 value={value}
                 onChange={onChange}
-                label=""
+                autoComplete="email"
                 error={!!errors.email}
                 helperText={errors.email?.message}
+                label=""
+                required
+                type="email"
                 sx={{ width: "100%" }}
+                slotProps={{ htmlInput: { maxLength: 254 } }}
               />
             )}
           />

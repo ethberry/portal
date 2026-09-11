@@ -75,7 +75,7 @@ export const Hero: FC = () => {
           <StyledButton
             id="book-a-call-button"
             component="a"
-            href="https://calendly.com/trejgun/30min"
+            href="https://calendly.com/ethberry/30min"
             target="_blank"
             size="large"
           >

@@ -16,6 +16,7 @@
         "articles": "Articles",
         "careers": "Careers",
         "company": "Company",
+        "contact": "Contact",
         "contacts": "Contacts",
         "dashboard": "Dashboard",
         "docs": "Docs",
@@ -247,6 +248,35 @@
       },
       "title": "Dashboard"
     },
+    "contact": {
+      "bookCall": "Book a Call",
+      "writeLetter": "Write a letter",
+      "budgets": {
+        "empty": "Prefer not to say",
+        "from10kTo25k": "$10k–$25k",
+        "from25kTo50k": "$25k–$50k",
+        "from50k": "$50k+",
+        "notSure": "Not sure yet",
+        "under10k": "Under $10k"
+      },
+      "description": "Tell us what you are building, where you are now, and what outcome you need. We will review the context and get back to you directly.",
+      "direct": {
+        "description": "Prefer to write or want to choose a time immediately? Use either option below.",
+        "title": "Talk directly"
+      },
+      "error": "We could not save your request. Please try again or use Write a letter.",
+      "fields": {
+        "budget": "Budget range (optional)",
+        "company": "Company (optional)",
+        "email": "Work email",
+        "message": "What are you building?",
+        "name": "Name"
+      },
+      "submit": "Send request",
+      "submitting": "Sending…",
+      "success": "Your request has been saved. We will get back to you directly.",
+      "title": "Let’s build something useful"
+    },
     "events": {
       "title": "Events"
     },
@@ -392,6 +422,7 @@
     "pageNotFound": "Page not found",
     "registered": "Registration successful, please verify your email to proceed",
     "rejectedByUser": "Rejected by user",
+    "subscriptionError": "We could not save your subscription. Please try again.",
     "subscriptionSuccess": "You are successfully subscribed! Thank you.",
     "success": "Success",
     "tooManyRequests": "Too Many Requests.",

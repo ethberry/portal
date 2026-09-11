@@ -37,10 +37,10 @@ export const Footer: FC = () => {
                   <StyledText>EthBerry LTD</StyledText>
                 </StyledLinksColumnWrapper>
                 <StyledLinksColumnHeader sx={{ pb: 0 }}>
-                  Georgia, Tbilisi, Krtsanisi District, Nino and Ilia
+                  Biliq Sunset Office Space, Bali Ruko Sunset
                 </StyledLinksColumnHeader>
                 <StyledLinksColumnHeader sx={{ pb: 0 }}>
-                  Nakashidze Street, N1, Office N3, Building N3
+                  Indah II No. 10, 80361, Kuta, Badung, Bali, Indonesia
                 </StyledLinksColumnHeader>
               </StyledLinksColumnWrapper>
             </Grid>

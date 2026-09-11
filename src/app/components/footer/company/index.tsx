@@ -8,11 +8,23 @@ export const CompanyColumn: FC = () => {
   const { formatMessage } = useIntl();
 
   const ourTeam = formatMessage({ id: "components.header.menu.ourTeam" });
+  const locations = formatMessage({ id: "components.header.menu.locations" });
+  const careers = formatMessage({ id: "components.header.menu.careers" });
   const technicalStack = formatMessage({ id: "components.header.menu.technicalStack" });
   const partnership = formatMessage({ id: "components.header.menu.partnership" });
   const pressKit = formatMessage({ id: "components.header.menu.pressKit" });
 
   const items = [
+    {
+      id: 49,
+      link: "/careers",
+      title: careers,
+    },
+    {
+      id: 50,
+      link: "/locations",
+      title: locations,
+    },
     {
       id: 51,
       link: "/our-team",

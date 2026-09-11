@@ -35,14 +35,24 @@ export const StyledHeader = styled(Typography)(({ theme }) => ({
 }));
 
 export const StyledTestimonialsWrapper = styled(Box)({
-  "& .testimonials-slider .slick-track": {
-    display: "flex",
+  "& .testimonials-slider": {
+    "& .slick-list": {
+      overflow: "hidden",
+    },
+    "& .slick-track": {
+      display: "flex",
+      alignItems: "stretch",
+    },
     "& .slick-slide": {
       display: "flex",
       justifyContent: "center",
       height: "auto",
+      overflow: "hidden",
       "& > div": {
+        display: "flex",
         height: "auto",
+        width: "100%",
+        minWidth: 0,
       },
     },
   },
@@ -51,9 +61,11 @@ export const StyledTestimonialsWrapper = styled(Box)({
 export const StyledTestimonialWrapper = styled(Box)(({ theme }) => ({
   width: "100%",
   height: "100%",
+  minWidth: 0,
   display: "flex!important",
   padding: theme.spacing(2),
   paddingBottom: theme.spacing(10),
+  boxSizing: "border-box",
 })) as typeof Box;
 
 export const StyledSelectedTestimonial = styled(Box)(({ theme }) => ({
@@ -64,7 +76,8 @@ export const StyledSelectedTestimonial = styled(Box)(({ theme }) => ({
   width: "100%",
   maxWidth: 1000,
   margin: theme.spacing(2, "auto", 0),
-  overflow: "visible",
+  overflow: "hidden",
+  minWidth: 0,
   height: "auto",
   border: `1px solid #F5F5F5`,
   boxShadow: "0px 20px 30px rgba(0, 0, 0, 0.25)",
@@ -96,6 +109,8 @@ export const StyledAvatarWrapper = styled(Box)(({ theme }) => ({
   paddingLeft: theme.spacing(3),
   display: "flex",
   alignItems: "flex-end",
+  minWidth: 0,
+  maxWidth: "100%",
   [theme.breakpoints.down("lg")]: {
     paddingLeft: theme.spacing(2),
     marginBottom: theme.spacing(2),
@@ -104,19 +119,29 @@ export const StyledAvatarWrapper = styled(Box)(({ theme }) => ({
     alignItems: "flex-start",
     paddingLeft: theme.spacing(1),
     marginBottom: 0,
-    height: 200,
-    marginTop: -32,
+    height: "auto",
+    marginTop: 0,
   },
 })) as typeof Box;
 
 export const StyledAvatar = styled(Box)(({ theme }) => ({
   height: 400,
+  width: "auto",
+  maxWidth: "100%",
   marginLeft: "auto",
   marginTop: -32,
   flexShrink: 0,
-  [theme.breakpoints.down("sm")]: {
-    height: 200,
+  objectFit: "cover",
+  objectPosition: "top",
+  display: "block",
+  [theme.breakpoints.down("lg")]: {
+    width: "100%",
+    height: "auto",
+    maxHeight: 360,
     marginTop: 0,
+  },
+  [theme.breakpoints.down("sm")]: {
+    maxHeight: 220,
   },
 })) as typeof Box;
 
@@ -124,6 +149,8 @@ export const StyledContent = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
+  minWidth: 0,
+  flex: 1,
   padding: theme.spacing(5, 4),
   [theme.breakpoints.down("lg")]: {
     padding: theme.spacing(0, 4, 4),
@@ -171,6 +198,7 @@ export const StyledAuthorTitle = styled(Typography)(({ theme }) => ({
   paddingBottom: 0,
   marginBottom: 0,
   lineHeight: 1.2,
+  overflowWrap: "anywhere",
   [theme.breakpoints.down("sm")]: {
     fontSize: 21,
   },
@@ -191,6 +219,7 @@ export const StyledTestimonialText = styled(Typography)(({ theme }) => ({
   color: "#6a6a6a!important",
   fontSize: 14,
   fontWeight: 400,
+  overflowWrap: "anywhere",
   [theme.breakpoints.down("sm")]: {
     display: "flex",
     justifyContent: "center",

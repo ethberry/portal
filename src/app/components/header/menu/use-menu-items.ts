@@ -13,6 +13,8 @@ export const useMenuItems = (): IMenuItem[] => {
 
   const home = formatMessage({ id: "components.header.menu.home" });
   const company = formatMessage({ id: "components.header.menu.company" });
+  const careers = formatMessage({ id: "components.header.menu.careers" });
+  const locations = formatMessage({ id: "components.header.menu.locations" });
   const pressKit = formatMessage({ id: "components.header.menu.pressKit" });
   const events = formatMessage({ id: "components.header.menu.events" });
 
@@ -27,6 +29,11 @@ export const useMenuItems = (): IMenuItem[] => {
       title: company,
       children: [
         {
+          id: 52,
+          link: "/locations",
+          title: locations,
+        },
+        {
           id: 53,
           link: "/events",
           title: events,
@@ -37,6 +44,11 @@ export const useMenuItems = (): IMenuItem[] => {
           title: pressKit,
         },
       ],
+    },
+    {
+      id: 6,
+      link: "/careers",
+      title: careers,
     },
   ];
 };

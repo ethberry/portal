@@ -134,15 +134,17 @@ export const Testimonials: FC = () => {
         },
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
-          centerPadding: "120px",
+          centerMode: false,
+          centerPadding: "0px",
         },
       },
       {
         breakpoint: 480,
         settings: {
           centerMode: false,
+          centerPadding: "0px",
         },
       },
     ],

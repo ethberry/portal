@@ -14,12 +14,14 @@
       },
       "menu": {
         "articles": "Articles",
+        "careers": "Careers",
         "company": "Company",
         "contacts": "Contacts",
         "dashboard": "Dashboard",
         "docs": "Docs",
         "events": "Events",
         "home": "Home",
+        "locations": "Locations",
         "login": "Login",
         "logout": "Logout",
         "media": "Media",
@@ -329,6 +331,25 @@
       "testimonials": {
         "title": "Here's what people are <b>saying about us</b>"
       }
+    },
+    "locations": {
+      "description": "We work as a distributed team across Asia. Legal entity and office are in Bali; the rest of the map is where the people are.",
+      "office": "Office",
+      "title": "Locations"
+    },
+    "careers": {
+      "apply": "Apply",
+      "back": "All roles",
+      "contractor": "Independent contractor",
+      "description": "Five full-remote, full-time contractor roles for senior specialists.",
+      "fullTime": "Full-time",
+      "howWeHire": "Hiring process",
+      "lookFor": "Required experience",
+      "offer": "What we offer",
+      "remote": "Full remote",
+      "title": "Careers",
+      "useful": "Useful, not required",
+      "youWillDo": "What you will do"
     },
     "page": {
       "title": "{title}"

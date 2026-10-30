@@ -18,8 +18,8 @@
     "@rainbow-me/rainbowkit": "2.2.11",
     "@react-native-async-storage/async-storage": "3.1.1",
     "@supabase/supabase-js": "2.118.0",
-    "@tanstack/react-query": "5.104.5",
-    "@vis.gl/react-google-maps": "1.10.1",
+    "@tanstack/react-query": "5.105.0",
+    "@vis.gl/react-google-maps": "1.10.2",
     "encoding": "0.1.14",
     "next": "16.4.3",
     "notistack": "3.0.2",
@@ -32,7 +32,7 @@
     "slick-carousel": "1.8.1",
     "supabase": "2.122.0",
     "typewriter-effect": "2.22.0",
-    "viem": "2.57.10",
+    "viem": "2.57.13",
     "wagmi": "3.7.9",
     "zod": "4.6.7"
   },
@@ -45,7 +45,7 @@
     "@types/react-slick": "0.23.13",
     "husky": "9.1.7",
     "lint-staged": "17.6.0",
-    "postcss": "8.5.31",
+    "postcss": "8.5.32",
     "prettier": "3.9.10",
     "supabase": "2.122.0",
     "typescript": "5.9.3"

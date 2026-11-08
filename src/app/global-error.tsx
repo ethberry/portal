@@ -1,8 +1,15 @@
 "use client";
 
+import { useEffect } from "react";
+import { captureException } from "@sentry/nextjs";
+
 // Replaces the root layout when it fails, so it brings its own html and body and uses no providers or theme.
 export default function GlobalError(props: { error: Error & { digest?: string }; reset: () => void }) {
-  const { reset } = props;
+  const { error, reset } = props;
+
+  useEffect(() => {
+    captureException(error);
+  }, [error]);
 
   return (
     <html lang="en">

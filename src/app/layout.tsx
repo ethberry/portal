@@ -1,6 +1,8 @@
 import { PropsWithChildren } from "react";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
+// eslint-disable-next-line import/no-unresolved -- the import plugin does not read the package "exports" map
+import { Analytics } from "@vercel/analytics/next";
 
 import Providers from "./components/Providers";
 import { Header } from "./components/header";
@@ -48,6 +50,7 @@ export default function RootLayout(props: PropsWithChildren) {
             <Footer />
           </Root>
         </Providers>
+        <Analytics />
       </body>
     </html>
   );

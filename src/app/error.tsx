@@ -1,9 +1,16 @@
 "use client";
 
+import { useEffect } from "react";
+import { captureException } from "@sentry/nextjs";
+
 import { StatusPage } from "./components/common/status";
 
 export default function ErrorPage(props: { error: Error & { digest?: string }; reset: () => void }) {
-  const { reset } = props;
+  const { error, reset } = props;
+
+  useEffect(() => {
+    captureException(error);
+  }, [error]);
 
   return (
     <StatusPage

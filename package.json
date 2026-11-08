@@ -30,7 +30,6 @@
     "react-intl": "10.2.2",
     "react-slick": "0.31.0",
     "slick-carousel": "1.8.1",
-    "supabase": "2.122.0",
     "typewriter-effect": "2.22.0",
     "viem": "2.57.13",
     "wagmi": "3.7.9",

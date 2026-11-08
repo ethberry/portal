@@ -38,7 +38,7 @@ export const Hero: FC = () => {
     <Root>
       <StyledContent>
         <StyledImage component={Image} src={Logo} alt="EthBerry Hero image" />
-        <StyledHeroTitle>
+        <StyledHeroTitle component="h1">
           <FormattedMessage id="pages.landing.hero.title.first" />
           <StyledBold sx={{ height: 54 }}>
             <Typewriter

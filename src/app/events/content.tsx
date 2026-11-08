@@ -13,7 +13,7 @@ export const EventsContent: FC = () => {
   return (
     <Root>
       <Typography
-        component="h2"
+        component="h1"
         sx={[
           theme => ({
             ...theme.typography.h4,

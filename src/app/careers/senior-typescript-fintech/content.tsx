@@ -17,7 +17,7 @@ export const SeniorTypescriptFintechContent: FC = () => {
         <FormattedMessage id="pages.careers.back" />
       </StyledBack>
       <Typography
-        component="h2"
+        component="h1"
         sx={[
           theme => ({
             ...theme.typography.h4,

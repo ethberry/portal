@@ -1,3 +1,4 @@
+import type { ElementType } from "react";
 import { styled } from "@mui/material/styles";
 import { Box, Button, Typography } from "@mui/material";
 
@@ -124,7 +125,8 @@ export const StyledButton = styled(Button)(({ theme }) => ({
   },
 })) as typeof Button;
 
-export const StyledHeroTitle = styled(Box)(({ theme }) => ({
+export const StyledHeroTitle = styled(Box)<{ component?: ElementType }>(({ theme }) => ({
+  margin: 0,
   fontFamily: "'Montserrat', sans-serif",
   fontSize: 45,
   fontWeight: 400,

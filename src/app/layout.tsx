@@ -14,9 +14,25 @@ const roboto = Roboto({
   variable: "--font-roboto",
 });
 
+const DESCRIPTION = "Custom development of crypto and AI applications";
+
 export const metadata: Metadata = {
-  title: "EthBerry Portal",
-  description: "Custom development of crypto and AI applications",
+  metadataBase: new URL("https://ethberry.io"),
+  title: { default: "EthBerry Portal", template: "%s | EthBerry" },
+  description: DESCRIPTION,
+  openGraph: {
+    type: "website",
+    siteName: "EthBerry",
+    title: "EthBerry Portal",
+    description: DESCRIPTION,
+    images: [{ url: "/press-kit/logo.png" }],
+  },
+  twitter: {
+    card: "summary",
+    title: "EthBerry Portal",
+    description: DESCRIPTION,
+    images: ["/press-kit/logo.png"],
+  },
 };
 
 export default function RootLayout(props: PropsWithChildren) {

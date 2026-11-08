@@ -3,12 +3,18 @@
 import { FC } from "react";
 import { Grid, useScrollTrigger } from "@mui/material";
 import Link from "next/link";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import dynamic from "next/dynamic";
 
 import Logo from "./logo.svg";
 import { StyledAppBar, StyledLink, StyledLogo, StyledToolbar } from "./styled";
 import { Menu } from "./menu";
 import { MobileMenu } from "./mobile-menu";
+
+// Wallet code is heavy and only this button needs it, so it loads after the page is shown.
+const Wallet = dynamic(() => import("./wallet").then(module => module.Wallet), {
+  ssr: false,
+  loading: () => <div style={{ width: 160, height: 40 }} />,
+});
 
 export const Header: FC = () => {
   const scrolled = useScrollTrigger({
@@ -49,7 +55,7 @@ export const Header: FC = () => {
             sx={{ display: { xs: "none", md: "flex" }, alignItems: "center", justifyContent: "flex-end" }}
           >
             {/*<Localization languages={Object.values(EnabledLanguages)} />*/}
-            <ConnectButton />
+            <Wallet />
             {/*<Sections />*/}
           </Grid>
         </Grid>

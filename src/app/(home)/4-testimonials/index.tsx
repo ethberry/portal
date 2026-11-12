@@ -69,7 +69,7 @@ const testimonials = [
     id: 4,
     avatar: "/landing/testimonials/yura.png",
     author: "Yury Toporov",
-    position: "CFO @ Gemunion",
+    position: "CFO @ EthBerry",
     link: "https://www.linkedin.com/in/yury-toporov",
     text: "I had the pleasure of working with Oleg for four years, and I am truly regretful that this project has come to an end. Oleg is an exceptional technical leader who consistently demonstrated a keen eye for detail and a deep understanding of our technological needs. His ability to lead by example inspired the entire team, driving us to achieve remarkable results. Oleg's dedication and expertise were instrumental in our success, and I am confident that he will continue to excel in any future endeavors.",
   },

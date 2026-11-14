@@ -10,7 +10,7 @@
     "@emotion/styled": "11.14.1",
     "@ethberry/provider-localization": "7.1.23",
     "@ethberry/provider-theme": "10.1.23",
-    "@ethberry/redux": "1.0.29",
+    "@ethberry/redux": "1.0.30",
     "@hookform/resolvers": "5.9.2",
     "@mui/icons-material": "9.5.0",
     "@mui/material": "9.5.0",

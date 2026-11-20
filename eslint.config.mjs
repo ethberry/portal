@@ -5,19 +5,14 @@ import typescriptRules from "@ethberry/eslint-config/presets/tsx.mjs";
 
 export default [
   {
-    ignores: [
-      ".next",
-      "src/db/supabase.types.ts"
-    ]
+    ignores: [".next", "next-env.d.ts", "src/db/supabase.types.ts"],
   },
 
   {
     ignores: ["eslint.config.mjs"],
     languageOptions: {
       parserOptions: {
-        project: [
-          "./tsconfig.eslint.json",
-        ],
+        project: ["./tsconfig.eslint.json"],
         tsconfigRootDir: process.dirname,
       },
     },

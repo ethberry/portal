@@ -5,6 +5,12 @@
     {
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
+    },
+    {
+      "description": "Wallet stack is held on its current majors: @rainbow-me/rainbowkit 2 is no longer developed and supports only wagmi 2 and viem 2 (docs/adr/0001-wallet-stack-majors.md).",
+      "matchPackageNames": ["@rainbow-me/rainbowkit", "wagmi", "viem"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
     }
   ]
 }

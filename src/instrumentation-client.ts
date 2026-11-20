@@ -5,7 +5,8 @@ import { TRACES_SAMPLE_RATE } from "./lib/sentry";
 const dsn = process.env.NEXT_PUBLIC_SENTRY_DSN;
 
 if (dsn) {
-  init({ dsn, tracesSampleRate: TRACES_SAMPLE_RATE });
+  // The browser sends events to the managed tunnel that the server answers (serveTunnelIntegration), past ad-blockers.
+  init({ dsn, tracesSampleRate: TRACES_SAMPLE_RATE, tunnel: true });
 }
 
 export const onRouterTransitionStart = captureRouterTransitionStart;

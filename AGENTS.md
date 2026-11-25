@@ -18,7 +18,7 @@ The public site of EthBerry (ethberry.io) plus a small license API. It is one Ne
 
 # Run, build, check
 
-- Node 24 (`.nvmrc`; the Vercel project setting still says 22.x). `npm install` works without a lockfile on purpose (`.npmrc`: `package-lock=false`, `save-exact`, `legacy-peer-deps`).
+- Node 26 (`.nvmrc`, `engines`, and the Vercel project setting 26.x). `npm install` works without a lockfile on purpose (`.npmrc`: `package-lock=false`, `save-exact`, `legacy-peer-deps`).
 - `npm run dev` is `next dev --webpack`; the first compile of `/` takes about 15 s. It also re-adds the Next.js block at the top of this file.
 - `npm run build`, `npm run start`. `npm run lint` is `eslint . --fix` on the whole repo: for one file use `npx eslint <file>`.
 - Type check: `npx tsc --noEmit`. `tsconfig.tsbuildinfo` is tracked in git and changes on every `tsc` run: restore it with `git checkout -- tsconfig.tsbuildinfo` unless the change is intended.

@@ -39,4 +39,4 @@ jobs:
           fi
 
       - name: Apply pending migrations
-        run: supabase db push --yes --project-ref "$SUPABASE_PROJECT_ID" --skip-vault
+        run: supabase db push --yes --remote="$SUPABASE_PROJECT_ID" --skip-vault
